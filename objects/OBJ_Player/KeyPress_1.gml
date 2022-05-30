@@ -11,7 +11,7 @@ if(keyboard_check(vk_numpad5) || keyboard_check(ord("K")) || keyboard_check(vk_u
 
 //Blocking
 if(IsHit == false && CurrentHP > 0 && OnGround == true && IsAttacking == false && IsParrying == false){
-	if (keyboard_check(vk_right)){
+	if (keyboard_check_pressed(vk_right)){
 		sprite_index = SPR_SteaksParry;
 		image_index = 0;
 		IsParrying = true;
