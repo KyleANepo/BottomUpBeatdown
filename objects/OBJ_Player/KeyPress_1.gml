@@ -9,6 +9,15 @@ if(keyboard_check(vk_numpad5) || keyboard_check(ord("K")) || keyboard_check(vk_u
     ButtonCombo += "+SAtk";
 }
 
+//Blocking
+if(IsHit == false && CurrentHP > 0 && OnGround == true && IsAttacking == false && IsParrying == false){
+	if (keyboard_check(vk_right)){
+		sprite_index = SPR_SteaksParry;
+		image_index = 0;
+		IsParrying = true;
+		SpeedMod = 0;
+	}
+}
 
 ds_list_add(CommandList, string_delete(ButtonCombo,1,1));
 alarm[0] = 20;
@@ -46,7 +55,7 @@ if(ds_list_find_value(CommandList,ds_list_size(CommandList)-1) == "SAtk" && ds_l
     AttackType = "Y";
 }
 
-if(OnGround == true && IsGuarding == false){
+if(OnGround == true && IsGuarding == false && IsParrying == false){
     event_user(2);
 }
 

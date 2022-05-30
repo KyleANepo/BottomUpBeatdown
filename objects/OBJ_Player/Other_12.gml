@@ -1,6 +1,6 @@
 var MyAttack = 0;
 
-if(IsHit == false && CurrentHP > 0){
+if(IsHit == false && CurrentHP > 0 ){
     if(AttackType == "X" && IsAttacking == false){
         sprite_index = SPR_SteaksPunch1;
 		image_index = 0;

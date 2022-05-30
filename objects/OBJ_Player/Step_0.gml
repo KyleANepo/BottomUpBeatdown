@@ -21,7 +21,7 @@ if(CurrentHP > 0){
 	    }
 	}
 	
-	if(IsAttacking == false && IsHit = false && IsGuarding == false){
+	if(IsAttacking == false && IsHit = false && IsParrying == false && IsGuarding == false){
          
     //If the player is on the ground move them with XSpeed and YSpeed, otherwise ignore YSpeed
     if(OnGround == true){
