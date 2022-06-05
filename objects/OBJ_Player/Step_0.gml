@@ -49,7 +49,7 @@ if(CurrentHP > 0){
 	    sprite_index = SPR_SteaksWalk;
 	}
 	//Jumping
-	if (keyboard_check_pressed(vk_down) && OnGround == true){
+	if ((keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("M"))) && OnGround == true){
 		OnGround = false;	
 		IsJumping = true;
 		

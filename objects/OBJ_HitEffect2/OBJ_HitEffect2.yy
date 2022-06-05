@@ -1,16 +1,13 @@
 {
   "spriteId": {
-    "name": "SPR_SteaksPunch1HB",
-    "path": "sprites/SPR_SteaksPunch1HB/SPR_SteaksPunch1HB.yy",
+    "name": "SPR_HitEffect2",
+    "path": "sprites/SPR_HitEffect2/SPR_HitEffect2.yy",
   },
   "solid": false,
-  "visible": false,
+  "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "ATK",
-    "path": "objects/ATK/ATK.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -24,7 +21,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":7,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -33,7 +30,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "ATK_X",
+  "name": "OBJ_HitEffect2",
   "tags": [],
   "resourceType": "GMObject",
 }
