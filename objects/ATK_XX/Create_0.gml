@@ -1,4 +1,4 @@
 event_inherited();
 Damage = 15;
-StunLength = 10;
+StunLength = 20;
 DMGFrame = 1;

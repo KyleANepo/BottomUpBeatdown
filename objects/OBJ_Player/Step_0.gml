@@ -1,5 +1,12 @@
 draw_healthbar(100, 100, 500, 200, MaxHP, c_black, c_red, c_lime, 0, true, true)
 
+x=clamp(x, 0, room_width);
+if (IsJumping == false) {
+	y=clamp(y, 325, room_height);
+} else
+{
+	y=clamp(y, 0, room_height);
+}
 //if hp 0, kill
 
 if(CurrentHP > 0){

@@ -4,7 +4,8 @@
     "path": "sprites/SPR_SteaksPunchY4HB/SPR_SteaksPunchY4HB.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {

@@ -1,4 +1,4 @@
-if(image_index == DMGFrame && abs(depth - other.depth) <= LayerSize && abs(y - other.y) <= LayerSize && Owner == "Player"){
+if(image_index == DMGFrame && abs(depth - other.depth) <= LayerSize && Owner == "Player"){
      
     other.CurrentHP -= Damage;
     other.IsHit = true;
@@ -15,7 +15,13 @@ if(image_index == DMGFrame && abs(depth - other.depth) <= LayerSize && abs(y - o
 		with (instance_create_depth(other.x, other.y-80, other.depth - 10, OBJ_HitEffect2)) {
 		image_angle = irandom(360);
 		}
-		alarm[0] = 1;
+		hitstop(100);
+		
+		if (OBJ_Player.image_xscale < 0) {
+			other.Knockback = 20;
+		} else {
+			other.Knockback = -20;
+		}
 	}
 	
 }

@@ -1,6 +1,6 @@
 event_inherited();
 Damage = 30;
-StunLength = 20;
-DMGFrame = 4;
+StunLength = 40;
+DMGFrame = 5;
 
 isHeavy = true;
