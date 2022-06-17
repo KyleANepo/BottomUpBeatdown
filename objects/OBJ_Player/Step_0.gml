@@ -1,6 +1,6 @@
 
 x=clamp(x, 0, room_width);
-if (IsJumping == false) {
+if (OnGround == true) {
 	y=clamp(y, 325, room_height);
 } else
 {

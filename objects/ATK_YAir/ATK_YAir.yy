@@ -4,7 +4,7 @@
     "path": "sprites/SPR_SteaksAirPunchYHB/SPR_SteaksAirPunchYHB.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,

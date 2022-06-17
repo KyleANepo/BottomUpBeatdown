@@ -125,8 +125,8 @@
     "resourceType": "GMNineSliceData",
   },
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Steaks",
+    "path": "folders/Sprites/Steaks.yy",
   },
   "resourceVersion": "1.0",
   "name": "SPR_SteaksAirPunchY",
