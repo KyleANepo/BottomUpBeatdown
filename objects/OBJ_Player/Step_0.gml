@@ -1,4 +1,3 @@
-draw_healthbar(100, 100, 500, 200, MaxHP, c_black, c_red, c_lime, 0, true, true)
 
 x=clamp(x, 0, room_width);
 if (IsJumping == false) {
