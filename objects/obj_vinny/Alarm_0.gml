@@ -1,1 +1,1 @@
-IsHit = false;
+State = "Idle";

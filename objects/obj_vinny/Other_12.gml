@@ -1,5 +1,3 @@
-var MyAttack = 0;
-
 ///Attack Event
 if(OBJ_Player.CurrentHP > 0){
  
@@ -15,10 +13,6 @@ if(OBJ_Player.CurrentHP > 0){
 		    image_xscale = other.image_xscale;
 			image_yscale = other.image_yscale;
 		    image_speed = other.image_speed;	
-			speed = 0;
-			Aggressiveness = 0;
-			
-			State = "Attacking";
 		    Owner = "Enemy"; 
 			depth = depth;
 			
@@ -42,4 +36,8 @@ if(OBJ_Player.CurrentHP > 0){
 		}
     }
      
+	
+	speed = 0;
+	Aggressiveness = 0;
+	State = "Attacking";
 }

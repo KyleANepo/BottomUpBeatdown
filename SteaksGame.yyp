@@ -5,6 +5,7 @@
     {"id":{"name":"SPR_SteaksPunch1HB","path":"sprites/SPR_SteaksPunch1HB/SPR_SteaksPunch1HB.yy",},"order":8,},
     {"id":{"name":"SPR_SteaksPunchY3HB","path":"sprites/SPR_SteaksPunchY3HB/SPR_SteaksPunchY3HB.yy",},"order":16,},
     {"id":{"name":"ATK_XXXY","path":"objects/ATK_XXXY/ATK_XXXY.yy",},"order":9,},
+    {"id":{"name":"SPR_SteaksHit","path":"sprites/SPR_SteaksHit/SPR_SteaksHit.yy",},"order":21,},
     {"id":{"name":"ATK_XY","path":"objects/ATK_XY/ATK_XY.yy",},"order":5,},
     {"id":{"name":"SPR_SteaksPunch2","path":"sprites/SPR_SteaksPunch2/SPR_SteaksPunch2.yy",},"order":9,},
     {"id":{"name":"SPR_VinnyWalking","path":"sprites/SPR_VinnyWalking/SPR_VinnyWalking.yy",},"order":1,},

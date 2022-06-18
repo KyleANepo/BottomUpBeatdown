@@ -19,6 +19,7 @@ CurrentHP = MaxHP;
 MaxStamina = 100;
 CurrentStamina = MaxStamina;
 
+Knockback = 0;
 
 OnGround = true;
 GroundY = y;
