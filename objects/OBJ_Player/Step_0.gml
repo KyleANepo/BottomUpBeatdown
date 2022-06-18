@@ -22,9 +22,9 @@ if(CurrentHP > 0){
 	YSpeed = 0;
 	if(OnGround == true){
 	    if(keyboard_check(ord("W"))){
-	        YSpeed = -1*Speed;
+	        YSpeed = -1*Speed/2;
 	    }else if(keyboard_check(ord("S"))){
-	        YSpeed = Speed;
+	        YSpeed = Speed/2;
 	    }
 	}
 	
