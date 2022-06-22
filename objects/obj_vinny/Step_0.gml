@@ -51,5 +51,11 @@ if(OnGround == true){
     GroundY = y;
 }
 
+if (image_xscale < 0) {
+	face = -1;
+} else {
+	face = 1;
+}
+
 depth = -1*GroundY;
 

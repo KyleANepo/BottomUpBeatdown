@@ -19,6 +19,8 @@ flashAlpha = 0;
 flashColor = c_white;
 
 State = "Idle";
+isString = 0;
+face = 1;
 
 //aggro range
 Aggressiveness = 0;

@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Vinny",
+    "path": "folders/Sprites/Vinny.yy",
   },
   "resourceVersion": "1.0",
   "name": "SPR_VinnyIdle",
