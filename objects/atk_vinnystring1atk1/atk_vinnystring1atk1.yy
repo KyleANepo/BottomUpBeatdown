@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "SPR_VinnySring1ATK1HB",
-    "path": "sprites/SPR_VinnySring1ATK1HB/SPR_VinnySring1ATK1HB.yy",
+    "name": "SPR_VinnyString1ATK1HB",
+    "path": "sprites/SPR_VinnyString1ATK1HB/SPR_VinnyString1ATK1HB.yy",
   },
   "solid": false,
   "visible": true,

@@ -30,8 +30,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Steaks",
+    "path": "folders/Objects/Steaks.yy",
   },
   "resourceVersion": "1.0",
   "name": "ATK_Y",

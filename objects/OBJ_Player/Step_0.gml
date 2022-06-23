@@ -63,7 +63,7 @@ if(CurrentHP > 0){
 		
 	    //Animate the Player based on what they're doing.
 		//Animates the Player based on their speed
-		if(XSpeed == 0 && YSpeed == 0 && OnGround == true){
+		if(XSpeed == 0 && YSpeed == 0 && OnGround == true && sprite_index!=SPR_SteaksSlip){
 		    SpeedMod = 1;
 		    sprite_index = SPR_SteaksIdle;
 		}else if((XSpeed!=0 || YSpeed != 0) && sprite_index!=SPR_SteaksWalk && OnGround == true){
@@ -79,8 +79,10 @@ if(CurrentHP > 0){
 			sprite_index = SPR_SteaksJump;
 			image_index = 0;
 		}
-	} else if(IsHit == true){
+	} else if(IsHit == true && IsGuarding == false){
 		sprite_index = SPR_SteaksHit;
+	} else if(IsGuarding == true) {
+		sprite_index = SPR_SteaksGuard;
 	}
 }else{
 	instance_destroy(); 
@@ -108,3 +110,8 @@ if(OnGround == true && IsAttacking == false && IsGuarding == false && IsHit == f
  
 //Sets the Players' depth based on their GroundY. We're using GroundY instead of y so that even when they're in the air, they will display in fornt of and behind the right objects.
 depth = -1*GroundY;
+
+if (flashAlpha > 0) { 
+	flashAlpha -=.2;
+}
+

@@ -8,19 +8,21 @@ if(image_index == DMGFrame && abs(depth - other.depth) <= LayerSize && Owner == 
 	if (isHeavy == false) { 
 		audio_play_sound(SND_HitX1, 10, false);
 		with (instance_create_depth(other.x-20, other.y-80, other.depth - 10, OBJ_HitEffect1)) {
-		image_angle = irandom(360);
+			image_angle = irandom(360);
 		}
+		other.flashAlpha = 1;
 	} else {
 		audio_play_sound(SND_HitY1, 10, false);
 		with (instance_create_depth(other.x, other.y-80, other.depth - 10, OBJ_HitEffect2)) {
-		image_angle = irandom(360);
+			image_angle = irandom(360);
 		}
+		other.flashAlpha = 1;
 		hitstop(100);
 		
 		if (OBJ_Player.image_xscale < 0) {
-			other.Knockback = 20;
+			other.Knockback = Knockback;
 		} else {
-			other.Knockback = -20;
+			other.Knockback = -Knockback;
 		}
 	}
 	

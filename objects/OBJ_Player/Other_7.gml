@@ -5,9 +5,12 @@ if(IsAttacking == true){
 
 if(sprite_index == SPR_SteaksParry){
 	IsParrying = false;
+	
 	if (keyboard_check(vk_right) || keyboard_check(ord("L"))) {
-	IsGuarding = true;
-	sprite_index = SPR_SteaksGuard;
-	image_index = 0;
+		IsGuarding = true;
 	}
+}
+
+if(sprite_index == SPR_SteaksSlip){
+	sprite_index = SPR_SteaksIdle;
 }

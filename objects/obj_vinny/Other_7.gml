@@ -25,3 +25,18 @@ if(sprite_index == SPR_VinnyString1ATK1)
 		depth = depth;
 	}
 }
+
+if(sprite_index == SPR_VinnyString2ATK1)
+{
+	sprite_index = SPR_VinnyString2ATK2;
+	image_index = 0;
+    MyAttack = instance_create_layer(x,y,"Instances",ATK_VinnyString2ATK2);
+	with (MyAttack)
+	{
+		image_xscale = other.image_xscale;
+		image_yscale = other.image_yscale;
+		image_speed = other.image_speed;	
+		Owner = "Enemy"; 
+		depth = depth;
+	}
+}

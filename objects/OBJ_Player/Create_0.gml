@@ -11,6 +11,7 @@ IsAttacking = false; //stops from moving if attacking, also prevents combos from
 IsHit = false; //stops from moving if getting hit
 IsJumping = false; //detects whether jump is manually pressed
 IsParrying = false; //detects if in parry state
+IsSlip = false;
 IsGuarding = false; //negates damage, stops movement
 AttackType = 0; //id of attack
 
@@ -18,6 +19,9 @@ MaxHP = 100;
 CurrentHP = MaxHP;
 MaxStamina = 100;
 CurrentStamina = MaxStamina;
+
+flashAlpha = 0;
+flashColor = c_blue;
 
 Knockback = 0;
 

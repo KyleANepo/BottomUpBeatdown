@@ -57,5 +57,9 @@ if (image_xscale < 0) {
 	face = 1;
 }
 
+if (flashAlpha > 0) { 
+	flashAlpha -=.2;
+}
+
 depth = -1*GroundY;
 
