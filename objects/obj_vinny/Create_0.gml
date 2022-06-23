@@ -19,8 +19,9 @@ flashAlpha = 0;
 flashColor = c_red;
 
 State = "Idle";
-isString = 0;
+isString = 0; //if move is start of a string
 face = 1;
+isArmored = false; //if move is armored
 
 //aggro range
 Aggressiveness = 0;

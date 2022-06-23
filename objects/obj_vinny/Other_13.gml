@@ -22,4 +22,7 @@ switch(State){
 	case "Hit":
 	    sprite_index = SPR_VinnyHit;
 	    break;
+		
+	case "Guard":
+		sprite_index = SPR_VinnyGuard;
 }

@@ -34,6 +34,11 @@ if (MaxHP > 0) {
 	    event_user(3);//Animate the Enemy
 		speed = 0;
 	    break;
+		
+	case "Guard":
+		event_user(3);
+		speed = 0;
+		break;
 	}
 	
 	//Knockback

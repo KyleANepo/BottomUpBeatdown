@@ -40,3 +40,8 @@ if(sprite_index == SPR_VinnyString2ATK1)
 		depth = depth;
 	}
 }
+
+if(sprite_index == SPR_VinnySpecial1)
+{
+	isArmored = false;
+}
