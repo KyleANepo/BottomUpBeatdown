@@ -9,5 +9,10 @@ switch(State){
                 State = "PositionFront";
             }
         break;
+	
+	case "Hit":
+		if(CurrentHP <= MaxHP/2 && Phase < 2){
+			State = "Phase2Transition"; 
+		}
 		
 }

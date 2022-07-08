@@ -35,6 +35,13 @@ if (MaxHP > 0) {
 		speed = 0;
 	    break;
 		
+	case "Phase2Transition":
+		Phase = 2;
+		event_user(3);
+		
+		speed = 0;
+		break;
+	
 	case "Guard":
 		event_user(3);
 		speed = 0;

@@ -5,7 +5,7 @@ SpeedMod = 1;
 
 Knockback = 0;
 
-MaxHP = 80;
+MaxHP = 2000;
 CurrentHP = MaxHP;
 
 OnGround = true;
@@ -18,10 +18,14 @@ SideMod = 1; //AI variable
 flashAlpha = 0;
 flashColor = c_red;
 
+Phase = 1;
 State = "Idle";
 isString = 0; //if move is start of a string
 face = 1;
 isArmored = false; //if move is armored
+
+isCounter = false;
+guardPoint = 3;
 
 //aggro range
 Aggressiveness = 0;
