@@ -5,7 +5,7 @@ SpeedMod = 1;
 
 Knockback = 0;
 
-MaxHP = 2000;
+MaxHP = 1000;
 CurrentHP = MaxHP;
 
 OnGround = true;
@@ -20,11 +20,12 @@ flashColor = c_red;
 
 Phase = 1;
 State = "Idle";
-isString = 0; //if move is start of a string
 face = 1;
-isArmored = false; //if move is armored
 
+isString = 0; //if move is start of a string
+isArmored = false; //if move is armored
 isCounter = false;
+isRanged = false; //if moves should be ranged/projectiled
 guardPoint = 3;
 
 //aggro range

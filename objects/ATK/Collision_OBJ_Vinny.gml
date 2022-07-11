@@ -1,4 +1,4 @@
-if(image_index == DMGFrame && abs(depth - other.depth) <= LayerSize && Owner == "Player"){
+if(image_index == DMGFrame && abs(depth - other.depth) <= LayerSize && Owner == "Player" && other.State != "BDash"){
     
 	if (other.State != "Guard") {
 		if (other.isArmored == false) { 

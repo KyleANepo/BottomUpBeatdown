@@ -1,13 +1,23 @@
 if(isString == 0)
 {
 	if(State == "Attacking" && OnGround == true){
- 
+		isArmored = false;
 	    State = "Idle";
- 
 	}
 } else if (isString > 0)
 {
 	isString -= 1;	
+}
+
+if(sprite_index == SPR_VinnyPhase2)
+{
+	isArmored = false;
+	State = "Idle";
+}
+
+if(State == "BDash")
+{
+	State = "Idle";
 }
 
 if(sprite_index == SPR_VinnyString1ATK1)
@@ -41,19 +51,8 @@ if(sprite_index == SPR_VinnyString2ATK1)
 	}
 }
 
-if(sprite_index == SPR_VinnySpecial1)
-{
-	isArmored = false;
-}
-
 if(sprite_index == SPR_VinnyCounter)
 {
-	isArmored = false;
 	isCounter = false;
 }
 
-if(sprite_index == SPR_VinnyPhase2)
-{
-	isArmored = false;
-	State = "Idle";
-}

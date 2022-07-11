@@ -1,9 +1,27 @@
 if(OnGround == true){
- 
-    if(distance_to_object(OBJ_Player) <= AttackRange && abs(y-OBJ_Player.GroundY) < LayerSize){
-        Aggressiveness += .02;
-        if(random(1) < Aggressiveness*.09){
-            event_user(2);//Attack Event
-        }
-    }
+	
+	if (Phase == 1) {
+	    if(distance_to_object(OBJ_Player) <= AttackRange && abs(y-OBJ_Player.GroundY) < LayerSize){
+	        Aggressiveness += .02;
+	        if(random(1) < Aggressiveness*.05){
+	            event_user(2);//Attack Event
+	        }
+	    }
+	}
+	else if (Phase == 2) {
+		if(distance_to_object(OBJ_Player) <= AttackRange && abs(y-OBJ_Player.GroundY) < LayerSize){
+	        Aggressiveness += .02;
+	        if(random(1) < Aggressiveness*.05){
+				isRanged = false;
+	            event_user(6);//Attack Event
+	        }
+	    } else
+		{
+			Aggressiveness += .01;
+	        if(random(1) < Aggressiveness*.03){
+				isRanged = true;
+	            event_user(6);//Attack Event
+	        }
+		}
+	}
 }

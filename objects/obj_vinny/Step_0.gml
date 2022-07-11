@@ -12,6 +12,7 @@ if (MaxHP > 0) {
     case "Idle":
         event_user(3); 
         event_user(1);
+		isArmored = false;
         break;
  
     case "PositionFront":
@@ -38,7 +39,7 @@ if (MaxHP > 0) {
 	case "Phase2Transition":
 		Phase = 2;
 		event_user(3);
-		
+		Speed = 3.5;
 		speed = 0;
 		break;
 	
@@ -46,6 +47,12 @@ if (MaxHP > 0) {
 		event_user(3);
 		speed = 0;
 		break;
+		
+	case "BDash":
+		event_user(3);
+		x -= face*10;
+		break;
+		
 	}
 	
 	//Knockback
@@ -56,6 +63,7 @@ if (MaxHP > 0) {
 		x -= Knockback;
 		Knockback -= 2;
 	}
+	
 
 }
 

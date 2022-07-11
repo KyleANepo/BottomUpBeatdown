@@ -27,6 +27,10 @@ switch(State){
 		sprite_index = SPR_VinnyGuard;
 		break;
 		
+	case "BDash":
+		sprite_index = SPR_VinnyBDash;
+		break;
+		
 	case "Phase2Transition":
 		sprite_index = SPR_VinnyPhase2;
 		isArmored = true;

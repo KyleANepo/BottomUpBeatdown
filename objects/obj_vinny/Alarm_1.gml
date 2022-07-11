@@ -1,6 +1,12 @@
 
 if (State = "Hit" && OBJ_Player.IsAttacking == true)
 {
-	State = "Guard";
-	alarm[2] = 60;
+	if (random(10) > 5)
+	{
+		State = "Guard";
+		alarm[2] = 60;
+	} else
+	{
+		State = "BDash";
+	}
 }

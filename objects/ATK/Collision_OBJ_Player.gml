@@ -2,7 +2,7 @@ if(image_index == DMGFrame && abs(depth - other.depth) <= LayerSize && abs(y - o
     
 	if (other.IsParrying == false) {
 	
-		if (other.IsGuarding == true)
+		if (other.IsGuarding == true && isUnblock == false)
 		{
 			Damage /= 10;
 			StunLength /= 2;
@@ -14,47 +14,57 @@ if(image_index == DMGFrame && abs(depth - other.depth) <= LayerSize && abs(y - o
      
 	 
 		 //hit effects
-		 if (isHeavy == false) { 
-			
-			if (other.IsGuarding == false) 
-			{
-				audio_play_sound(SND_HitX1, 10, false);
-				with (instance_create_depth(other.x-20, other.y-80, other.depth - 10, OBJ_HitEffect1)) {
-				image_angle = irandom(360);
-				}
-				other.flashColor = c_red;
-				other.flashAlpha = 1;
-			} else
-			{
-				audio_play_sound(SND_HitBlocked, 10, false);
-				instance_create_depth(other.x-20, other.y-80, other.depth - 10, OBJ_GuardEffect);
-				other.flashColor = c_white;
-				other.flashAlpha = 1;
-			}
-		} else {
-			if (other.IsGuarding == false) 
-			{
-				audio_play_sound(SND_HitY1, 10, false);
-				with (instance_create_depth(other.x-20, other.y-80, other.depth - 10, OBJ_HitEffect2)) {
-				image_angle = irandom(360);
-				}
-				other.flashColor = c_red;
-				other.flashAlpha = 1;
-			} else
-			{
-				audio_play_sound(SND_HitBlocked, 10, false);
-				instance_create_depth(other.x-20, other.y-80, other.depth - 10, OBJ_GuardEffect);
-				other.flashColor = c_white;
-				other.flashAlpha = 1;
-			}
-			hitstop(100);
-		
-			if (OBJ_Vinny.image_xscale < 0) {
+		 
+		 if (other.IsGuarding == true && isUnblock == false)
+		 {
+			 blockatkeffects();
+		 } else
+		 {
+			 if (isHeavy == false) {
+				 lightatkeffects();
+			 } else
+			 {
+				 heavyatkeffects();
+			 }
+		 }
+		 
+		 if (isHeavy == true)
+		 {
+			 hitstop(100);
+			 
+			 if (OBJ_Vinny.image_xscale < 0) {
 				other.Knockback = Knockback;
-			} else {
+				} else {
 				other.Knockback = -Knockback;
-			}
-		}
+				}
+		 }
+		 
+		 
+		// if (isHeavy == false) { 
+			
+		//	if (other.IsGuarding == false) 
+		//	{
+		//		lightatkeffects();
+		//	} else
+		//	{
+		//		blockatkeffects()
+		//	}
+		//} else {
+		//	if (other.IsGuarding == false) 
+		//	{
+		//		heavyatkeffects();
+		//	} else
+		//	{
+		//		blockatkeffects()
+		//	}
+		//	hitstop(100);
+		
+		//	if (OBJ_Vinny.image_xscale < 0) {
+		//		other.Knockback = Knockback;
+		//	} else {
+		//		other.Knockback = -Knockback;
+		//	}
+		//}
 	
 	} else
 	{
