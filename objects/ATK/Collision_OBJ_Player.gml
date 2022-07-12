@@ -39,39 +39,15 @@ if(image_index == DMGFrame && abs(depth - other.depth) <= LayerSize && abs(y - o
 				}
 		 }
 		 
-		 
-		// if (isHeavy == false) { 
-			
-		//	if (other.IsGuarding == false) 
-		//	{
-		//		lightatkeffects();
-		//	} else
-		//	{
-		//		blockatkeffects()
-		//	}
-		//} else {
-		//	if (other.IsGuarding == false) 
-		//	{
-		//		heavyatkeffects();
-		//	} else
-		//	{
-		//		blockatkeffects()
-		//	}
-		//	hitstop(100);
-		
-		//	if (OBJ_Vinny.image_xscale < 0) {
-		//		other.Knockback = Knockback;
-		//	} else {
-		//		other.Knockback = -Knockback;
-		//	}
-		//}
-	
 	} else
 	{
 		other.IsParrying = false;
 		other.IsSlip = true;
 		other.sprite_index = SPR_SteaksSlip;
 		other.image_index = 0;
+		
+		other.CurrentHP += 10;
+		
 		other.flashColor = c_blue;
 		other.flashAlpha = 1;
 		audio_play_sound(SND_Slip, 10, false);

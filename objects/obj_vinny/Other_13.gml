@@ -35,4 +35,9 @@ switch(State){
 		sprite_index = SPR_VinnyPhase2;
 		isArmored = true;
 		break;
+		
+	case "Phase3Transition":
+		sprite_index = SPR_VinnyPhase2;
+		isArmored = true;
+		break;
 }

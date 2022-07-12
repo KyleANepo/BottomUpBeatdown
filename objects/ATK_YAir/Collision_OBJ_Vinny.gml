@@ -1,5 +1,7 @@
-if(image_index == DMGFrame && abs(depth - other.depth) <= LayerSize && Owner == "Player" && other.State != "BDash"){
+if(image_index >= DMGFrame && hit < 1 && abs(depth - other.depth) <= LayerSize && Owner == "Player" && other.State != "BDash"){
     
+	hit = 1;
+	
 	if (other.State != "Guard") {
 		if (other.isArmored == false) { 
 		    other.CurrentHP -= Damage;
@@ -32,7 +34,7 @@ if(image_index == DMGFrame && abs(depth - other.depth) <= LayerSize && Owner == 
 			
 			if (other.alarm[1] == -1) //if first hit in a combo, allow for followups until alloted time. then guard.
 			{
-				other.alarm[1] = 50;
+				other.alarm[1] = 60;
 			}
 			
 			

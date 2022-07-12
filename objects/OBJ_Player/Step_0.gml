@@ -7,6 +7,8 @@ if (OnGround == true) {
 	y=clamp(y, 0, room_height);
 }
 
+CurrentHP = clamp(CurrentHP, 0, MaxHP);
+
 
 //if alive
 if(CurrentHP > 0){

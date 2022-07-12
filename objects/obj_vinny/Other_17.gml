@@ -1,4 +1,4 @@
-///Attack Event Phase 2
+///Attack Event Phase 3
 if(OBJ_Player.CurrentHP > 0){
  
     AttackChance = random(100); 
@@ -29,7 +29,7 @@ if(OBJ_Player.CurrentHP > 0){
  
 	        sprite_index = SPR_VinnyString1ATK1;
 			image_index = 0;
-			isString = 1;
+			isString = 2;
 	        MyAttack = instance_create_layer(x,y,"Instances",ATK_VinnyString1ATK1);
 			with (MyAttack)
 			{

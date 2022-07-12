@@ -3,7 +3,7 @@ x=clamp(x, 0, room_width);
 y=clamp(y, 325, room_height);
 
 //if hp greater than 0, do everything
-if (MaxHP > 0) {
+if (CurrentHP > 0) {
 	
 	event_user(0);
 
@@ -42,6 +42,13 @@ if (MaxHP > 0) {
 		Speed = 3.5;
 		speed = 0;
 		break;
+		
+	case "Phase3Transition":
+		Phase = 3;
+		event_user(3);
+		Speed = 2;
+		speed = 0;
+		break;
 	
 	case "Guard":
 		event_user(3);
@@ -64,6 +71,33 @@ if (MaxHP > 0) {
 		Knockback -= 2;
 	}
 	
+	
+	//special 4
+	if (sprite_index == SPR_VinnySpecial4)
+	{
+		if (image_index == 6 || image_index == 12) 
+		{
+			MyAttack = instance_create_layer(OBJ_Player.x,OBJ_Player.GroundY,"Instances",ATK_VinnySpecial4);
+			with (MyAttack)
+			{
+				image_xscale = other.image_xscale;
+				image_yscale = other.image_yscale;
+				image_speed = other.image_speed;	
+				Owner = "Enemy"; 
+				depth = depth;
+			}
+		} else if (image_index == 9) {
+			MyAttack = instance_create_layer(OBJ_Player.x,OBJ_Player.GroundY,"Instances",ATK_VinnySpecial4);
+			with (MyAttack)
+			{
+				image_xscale = other.image_xscale*-1;
+				image_yscale = other.image_yscale;
+				image_speed = other.image_speed;	
+				Owner = "Enemy"; 
+				depth = depth;
+			}
+		}
+	}
 
 }
 

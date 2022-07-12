@@ -11,8 +11,11 @@ switch(State){
         break;
 	
 	case "Hit":
-		if(CurrentHP <= MaxHP/2 && Phase < 2){
+		if(CurrentHP <= (MaxHP/3)*2 && Phase < 2){
 			State = "Phase2Transition"; 
+		} else if (CurrentHP <= (MaxHP/3) && Phase == 2)
+		{
+			State = "Phase3Transition";
 		}
 		
 }

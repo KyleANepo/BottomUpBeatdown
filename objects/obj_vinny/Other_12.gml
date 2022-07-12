@@ -6,6 +6,7 @@ if(OBJ_Player.CurrentHP > 0){
 	speed = 0;
 	Aggressiveness = 0;
 	State = "Attacking";
+	isArmored = true;
  
 	if (isCounter == true)
 	{
