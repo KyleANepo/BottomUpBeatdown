@@ -87,7 +87,7 @@ if(CurrentHP > 0){
 		sprite_index = SPR_SteaksGuard;
 	}
 }else{
-	instance_destroy(); 
+	room_goto_previous();
 	//if hp 0, kill
 }
 

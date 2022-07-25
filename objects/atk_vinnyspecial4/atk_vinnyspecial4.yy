@@ -30,8 +30,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Vinny",
+    "path": "folders/Objects/Vinny.yy",
   },
   "resourceVersion": "1.0",
   "name": "ATK_VinnySpecial4",

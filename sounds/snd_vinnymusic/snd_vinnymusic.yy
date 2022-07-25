@@ -1,7 +1,7 @@
 {
   "conversionMode": 0,
   "compression": 0,
-  "volume": 0.2,
+  "volume": 0.3,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_vinnymusic.mp3",
-  "duration": 300.87833,
+  "duration": 542.41815,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

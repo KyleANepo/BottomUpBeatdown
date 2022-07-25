@@ -23,11 +23,13 @@ if(image_index == DMGFrame && abs(depth - other.depth) <= LayerSize && Owner == 
 				other.flashAlpha = 1;
 				hitstop(100);
 		
-				if (OBJ_Player.image_xscale < 0) {
-					other.Knockback = Knockback;
-				} else {
-					other.Knockback = -Knockback;
-				}
+			}
+			
+			//Knockback
+			if (OBJ_Player.image_xscale < 0) {
+				other.Knockback = Knockback;
+			} else {
+				other.Knockback = -Knockback;
 			}
 			
 			if (other.alarm[1] == -1) //if first hit in a combo, allow for followups until alloted time. then guard.

@@ -46,7 +46,7 @@ if(image_index == DMGFrame && abs(depth - other.depth) <= LayerSize && abs(y - o
 		other.sprite_index = SPR_SteaksSlip;
 		other.image_index = 0;
 		
-		other.CurrentHP += 10;
+		other.CurrentHP += 5;
 		
 		other.flashColor = c_blue;
 		other.flashAlpha = 1;

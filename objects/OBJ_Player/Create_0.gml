@@ -15,7 +15,7 @@ IsSlip = false;
 IsGuarding = false; //negates damage, stops movement
 AttackType = 0; //id of attack
 
-MaxHP = 200;
+MaxHP = 100;
 CurrentHP = MaxHP;
 MaxStamina = 100;
 CurrentStamina = MaxStamina;
