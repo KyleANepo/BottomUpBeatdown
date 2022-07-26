@@ -87,7 +87,7 @@ if(CurrentHP > 0){
 		sprite_index = SPR_SteaksGuard;
 	}
 }else{
-	room_goto_previous();
+	fadetoroom(r_menu, 50, c_black);
 	//if hp 0, kill
 }
 
@@ -103,11 +103,6 @@ if(OnGround == true){
 		IsJumping = false;
 		JumpSpeed = 10;
 	}
-}
-
-if(OnGround == true && IsAttacking == false && IsGuarding == false && IsHit == false && CurrentStamina < MaxStamina)
-{
-	CurrentStamina += 5;
 }
  
 //Sets the Players' depth based on their GroundY. We're using GroundY instead of y so that even when they're in the air, they will display in fornt of and behind the right objects.

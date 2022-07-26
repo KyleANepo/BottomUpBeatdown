@@ -36,11 +36,11 @@ if select {
 			switch(index) {
 				case 0:
 					//Buster
-					room_goto(r_buster);
+					fadetoroom(r_buster, 30, c_black);
 				break;
 				case 1:
 					//Vinny
-					room_goto(r_vinny);
+					fadetoroom(r_vinny, 30, c_black);
 				break;
 				case 2:
 					sub_menu = 0;

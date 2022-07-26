@@ -18,25 +18,9 @@ if(OnGround == true){
 	    } else
 		{
 			Aggressiveness += .01;
-	        if(random(1) < Aggressiveness*.03){
+	        if(random(1) < Aggressiveness*.07){
 				isRanged = true;
 	            event_user(6);//Attack Event
-	        }
-		}
-	}
-	else if (Phase == 3) {
-		if(distance_to_object(OBJ_Player) <= AttackRange && abs(y-OBJ_Player.GroundY) < LayerSize){
-	        Aggressiveness += .04;
-	        if(random(1) < Aggressiveness*.05){
-				isRanged = false;
-	            event_user(7);//Attack Event
-	        }
-	    } else
-		{
-			Aggressiveness += .02;
-	        if(random(1) < Aggressiveness*.03){
-				isRanged = true;
-	            event_user(7);//Attack Event
 	        }
 		}
 	}

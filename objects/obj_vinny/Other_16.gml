@@ -56,11 +56,11 @@ if(OBJ_Player.CurrentHP > 0){
 		
 		}else{
  
-	        sprite_index = SPR_VinnySpecial3;
+	        sprite_index = SPR_VinnySpecial1;
 			image_index = 0;
 			isArmored = true;
 			unblockEffects();
-	        MyAttack = instance_create_layer(x,y,"Instances",ATK_VinnySpecial3);
+	        MyAttack = instance_create_layer(x,y,"Instances",ATK_VinnySpecial1);
 			with (MyAttack)
 			{
 			    image_xscale = other.image_xscale;
@@ -71,7 +71,7 @@ if(OBJ_Player.CurrentHP > 0){
 			}
 	    }
 	} else {
-		if (AttackChance > 70) {
+		if (AttackChance > 50) {
 	        sprite_index = SPR_VinnySpecial3;
 			image_index = 0;
 			isArmored = true;

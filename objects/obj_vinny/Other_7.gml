@@ -9,7 +9,7 @@ if(isString == 0)
 	isString -= 1;	
 }
 
-if(State == "Phase2Transition" || State == "Phase3Transition")
+if(State == "Phase2Transition")
 {
 	isArmored = false;
 	State = "BDash";
@@ -26,22 +26,6 @@ if(sprite_index == SPR_VinnyString1ATK1)
 	image_index = 0;
 	x += 60 * face;
     MyAttack = instance_create_layer(x,y,"Instances",ATK_VinnyString1ATK2);
-	with (MyAttack)
-	{
-		image_xscale = other.image_xscale;
-		image_yscale = other.image_yscale;
-		image_speed = other.image_speed;	
-		Owner = "Enemy"; 
-		depth = depth;
-	}
-}
-
-if (sprite_index == SPR_VinnyString1ATK2 && Phase == "3")
-{
-	sprite_index = SPR_VinnySpecial1;
-	image_index = 0;
-	unblockEffects();
-    MyAttack = instance_create_layer(x,y,"Instances",ATK_VinnySpecial1);
 	with (MyAttack)
 	{
 		image_xscale = other.image_xscale;

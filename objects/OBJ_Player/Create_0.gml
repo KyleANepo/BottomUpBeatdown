@@ -17,8 +17,6 @@ AttackType = 0; //id of attack
 
 MaxHP = 200;
 CurrentHP = MaxHP;
-MaxStamina = 100;
-CurrentStamina = MaxStamina;
 
 flashAlpha = 0;
 flashColor = c_blue;
