@@ -1,4 +1,4 @@
-if(image_index >= DMGFrame && hit < 1 && abs(depth - other.depth) <= LayerSize && Owner == "Player" && other.State != "BDash"){
+if(image_index >= DMGFrame && hit < 1 && abs(OBJ_Player.GroundY - other.GroundY) <= LayerSize && Owner == "Player" && other.State != "BDash"){
     
 	hit = 1;
 	
@@ -25,16 +25,18 @@ if(image_index >= DMGFrame && hit < 1 && abs(depth - other.depth) <= LayerSize &
 				other.flashAlpha = 1;
 				hitstop(100);
 		
-				if (OBJ_Player.image_xscale < 0) {
-					other.Knockback = Knockback;
-				} else {
-					other.Knockback = -Knockback;
-				}
+				
 			}
 			
 			if (other.alarm[1] == -1) //if first hit in a combo, allow for followups until alloted time. then guard.
 			{
 				other.alarm[1] = 60;
+			}
+			
+			if (OBJ_Player.image_xscale < 0) {
+				other.Knockback = Knockback;
+			} else {
+				other.Knockback = -Knockback;
 			}
 			
 			

@@ -113,6 +113,13 @@ if (image_xscale < 0) {
 	face = 1;
 }
 
+if (OBJ_Player.image_xscale < 0) {
+	bface = -1;
+} else {
+	bface = 1;
+}
+
+
 if (flashAlpha > 0) { 
 	flashAlpha -=.2;
 }

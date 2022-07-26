@@ -1,7 +1,7 @@
 switch(State){
  
     case "Idle":
-        sprite_index = SPR_VinnyIdle;
+        sprite_index = SPR_BusterIdle;
         break;
          
     case "PositionFront":
@@ -13,31 +13,21 @@ switch(State){
 	    }
 		
 	    if(speed != 0){
-	        sprite_index = SPR_VinnyWalking;
+	        sprite_index = SPR_BusterWalk;
 	    }else{
-	        sprite_index = SPR_VinnyIdle;
+	        sprite_index = SPR_BusterIdle;
 	    }
 	    break;
 		
 	case "Hit":
-	    sprite_index = SPR_VinnyHit;
+	    sprite_index = SPR_BusterHit;
 	    break;
 		
 	case "Guard":
-		sprite_index = SPR_VinnyGuard;
+		sprite_index = SPR_BusterGuard;
 		break;
 		
 	case "BDash":
-		sprite_index = SPR_VinnyBDash;
-		break;
-		
-	case "Phase2Transition":
-		sprite_index = SPR_VinnyPhase2;
-		isArmored = true;
-		break;
-		
-	case "Phase3Transition":
-		sprite_index = SPR_VinnyPhase2;
-		isArmored = true;
+		sprite_index = SPR_BusterBDash;
 		break;
 }

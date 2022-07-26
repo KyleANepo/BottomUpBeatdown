@@ -8,7 +8,7 @@ switch (Owner)
 	break;
 		
 	case "Enemy":
-		if (OBJ_Vinny.State == "Hit")
+		if (OBJ_Enemy.State == "Hit")
 		{
 			instance_destroy();
 		}

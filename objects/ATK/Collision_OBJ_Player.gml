@@ -32,7 +32,7 @@ if(image_index == DMGFrame && abs(depth - other.depth) <= LayerSize && abs(y - o
 		 {
 			 hitstop(100);
 			 
-			 if (OBJ_Vinny.image_xscale < 0) {
+			 if (OBJ_Enemy.image_xscale < 0) {
 				other.Knockback = Knockback;
 				} else {
 				other.Knockback = -Knockback;

@@ -37,20 +37,6 @@ if (CurrentHP > 0) {
 	    event_user(3);//Animate the Enemy
 		speed = 0;
 	    break;
-		
-	case "Phase2Transition":
-		Phase = 2;
-		event_user(3);
-		Speed = 3.5;
-		speed = 0;
-		break;
-		
-	case "Phase3Transition":
-		Phase = 3;
-		event_user(3);
-		Speed = 2;
-		speed = 0;
-		break;
 	
 	case "Guard":
 		event_user(3);
@@ -62,6 +48,10 @@ if (CurrentHP > 0) {
 		x -= face*10;
 		break;
 		
+	case "Attacking": //any special movement cases
+		if (sprite_index == SPR_BusterString1 && (image_index > 3 && image_index < 20)) x += face*2;
+		break;
+		
 	}
 	
 	//Knockback
@@ -71,34 +61,6 @@ if (CurrentHP > 0) {
 	} else if (Knockback > 0) {
 		x -= Knockback;
 		Knockback -= 2;
-	}
-	
-	
-	//special 4
-	if (sprite_index == SPR_VinnySpecial4)
-	{
-		if (image_index == 6 || image_index == 12) 
-		{
-			MyAttack = instance_create_layer(OBJ_Player.x,OBJ_Player.GroundY,"Instances",ATK_VinnySpecial4);
-			with (MyAttack)
-			{
-				image_xscale = other.image_xscale;
-				image_yscale = other.image_yscale;
-				image_speed = other.image_speed;	
-				Owner = "Enemy"; 
-				depth = depth;
-			}
-		} else if (image_index == 9) {
-			MyAttack = instance_create_layer(OBJ_Player.x,OBJ_Player.GroundY,"Instances",ATK_VinnySpecial4);
-			with (MyAttack)
-			{
-				image_xscale = other.image_xscale*-1;
-				image_yscale = other.image_yscale;
-				image_speed = other.image_speed;	
-				Owner = "Enemy"; 
-				depth = depth;
-			}
-		}
 	}
 
 }

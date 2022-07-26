@@ -33,7 +33,7 @@ if(image_index == DMGFrame && abs(depth - other.depth) <= LayerSize && Owner == 
 			
 			if (other.alarm[1] == -1) //if first hit in a combo, allow for followups until alloted time. then guard.
 			{
-				other.alarm[1] = 50;
+				other.alarm[1] = 80;
 			}
 			
 			
@@ -61,13 +61,5 @@ if(image_index == DMGFrame && abs(depth - other.depth) <= LayerSize && Owner == 
 		}
 		other.flashColor = c_white;
 		other.flashAlpha = 1;
-		
-		other.guardPoint -= 1;
-		if (other.guardPoint < 1) 
-			{
-				other.guardPoint = 3;
-				other.isCounter = true;
-				other.sprite_index = SPR_VinnyCounter
-			}
 	}
 }
