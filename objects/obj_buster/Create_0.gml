@@ -28,6 +28,10 @@ isCounter = false;
 isRanged = false; //if moves should be ranged/projectiled
 guardPoint = 3;
 
+Mortal = 0;
+hasPassed1 = false;
+hasPassed3 = false;
+
 //aggro range
 Aggressiveness = 0;
 AttackRange = sprite_width/2+OBJ_Player.sprite_width/2;

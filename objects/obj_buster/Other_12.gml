@@ -7,8 +7,14 @@ if(OBJ_Player.CurrentHP > 0){
 	Aggressiveness = 0;
 	State = "Attacking";
 	isArmored = true;
- 
-	if(AttackChance>= 66){
+	
+	if(Mortal > 0)
+	{
+		sprite_index = SPR_BusterSpecial1Transform;
+		image_index = 0;
+		isString = 1;
+		Mortal = 0;
+	} else if(AttackChance>= 66){
  
         sprite_index = SPR_BusterString1;
 		image_index = 0;
