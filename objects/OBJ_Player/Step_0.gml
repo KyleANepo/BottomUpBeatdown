@@ -83,7 +83,7 @@ if(CurrentHP > 0){
 		}
 	} else if(IsHit == true && IsGuarding == false){
 		sprite_index = SPR_SteaksHit;
-	} else if(IsGuarding == true) {
+	} else if(IsGuarding == true && IsParrying == false && sprite_index != SPR_SteaksSlip) {
 		sprite_index = SPR_SteaksGuard;
 	}
 }else{

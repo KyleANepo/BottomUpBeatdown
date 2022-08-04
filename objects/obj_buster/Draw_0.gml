@@ -11,7 +11,7 @@ if (sprite_index != SPR_BusterSpecial1Attack && image_index < 4)
 draw_set_alpha(1);
 draw_self();
 
-//draw_text(x,y,Mortal);
+draw_text(x,y,CurrentHP);
 //draw_text(x,y+20,hasPassed1);
 
 if (flashAlpha > 0) {

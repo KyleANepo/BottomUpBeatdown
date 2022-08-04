@@ -15,6 +15,7 @@ if(IsHit == false && CurrentHP > 0 && OnGround == true && IsAttacking == false &
 		sprite_index = SPR_SteaksParry;
 		image_index = 0;
 		IsParrying = true;
+		IsGuarding = true;
 		SpeedMod = 0;
 	}
 }

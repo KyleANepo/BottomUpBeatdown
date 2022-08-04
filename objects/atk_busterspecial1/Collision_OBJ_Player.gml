@@ -44,6 +44,7 @@ if((image_index > 3 && image_index <= DMGFrame) && hit < 1 && abs(depth - other.
 	} else
 	{
 		other.IsParrying = false;
+		other.IsGuarding = false;
 		other.IsSlip = true;
 		other.sprite_index = SPR_SteaksSlip;
 		other.image_index = 0;

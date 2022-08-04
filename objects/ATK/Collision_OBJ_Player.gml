@@ -6,6 +6,10 @@ if(image_index == DMGFrame && abs(depth - other.depth) <= LayerSize && abs(y - o
 		{
 			Damage /= 10;
 			StunLength /= 2;
+		} else if (isUnblock == true)
+		{
+			other.SpeedMod = 1;
+			other.IsGuarding = false;
 		}
 	
 	    other.CurrentHP -= Damage;
@@ -42,7 +46,9 @@ if(image_index == DMGFrame && abs(depth - other.depth) <= LayerSize && abs(y - o
 	} else
 	{
 		other.IsParrying = false;
+		other.IsGuarding = false;
 		other.IsSlip = true;
+		other.SpeedMod = 1;
 		other.sprite_index = SPR_SteaksSlip;
 		other.image_index = 0;
 		
@@ -54,6 +60,6 @@ if(image_index == DMGFrame && abs(depth - other.depth) <= LayerSize && abs(y - o
 		with (instance_create_depth(other.x-20, other.y-80, other.depth - 10, OBJ_ParryEffect)) {
 			image_angle = irandom(360); 
 		}
-		hitstop(100);
+		hitstop(200);
 	}
 }
