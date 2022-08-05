@@ -27,6 +27,15 @@ if(OBJ_Player.CurrentHP > 0){
 		    Owner = "Enemy"; 
 			depth = depth;
 		}
+		Minion2 = instance_create_layer(x-100,y-50,"Instances",OBJ_BusterMinion);
+		with (Minion2)
+		{
+		    image_xscale = other.image_xscale;
+			image_yscale = other.image_yscale;
+		    image_speed = other.image_speed;	
+		    Owner = "Enemy"; 
+			depth = depth;
+		}
 		Summon = 0;
 	} else if(AttackChance>= 66){
  

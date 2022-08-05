@@ -1,6 +1,6 @@
 //shadow
 
-if (sprite_index != SPR_BusterSpecial1Attack && image_index < 4)
+if (sprite_index != SPR_BusterSpecial1Attack)
 {
 	draw_set_alpha(.6);
 	draw_set_color(c_black);
@@ -11,7 +11,7 @@ if (sprite_index != SPR_BusterSpecial1Attack && image_index < 4)
 draw_set_alpha(1);
 draw_self();
 
-draw_text(x,y,Minion1);
+//draw_text(x,y,Minion1);
 //draw_text(x,y+20,hasPassed1);
 
 if (flashAlpha > 0) {

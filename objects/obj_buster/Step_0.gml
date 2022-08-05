@@ -1,6 +1,6 @@
 //boundaries
-x=clamp(x, 0, room_width);
-y=clamp(y, 325, room_height);
+x=clamp(x, 30, room_width-30);
+y=clamp(y, 325, room_height-10);
 
 CurrentHP = clamp(CurrentHP, 0, MaxHP);
 
@@ -68,8 +68,8 @@ if (CurrentHP > 0) {
 	}
 	
 	//change speed depending on if minions exists
-	if (Minion1 != 0)
-	{ Speed = 2.5 }
+	if (instance_exists(OBJ_BusterMinion))
+	{ Speed = 2 }
 	else
 	{ Speed = 5}
 	

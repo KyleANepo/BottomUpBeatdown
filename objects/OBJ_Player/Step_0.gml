@@ -1,5 +1,5 @@
 
-x=clamp(x, 0, room_width);
+x=clamp(x, 30, room_width-30);
 if (OnGround == true) {
 	y=clamp(y, 325, room_height);
 } else

@@ -34,7 +34,7 @@ hasPassed3 = false;
 
 //aggro range
 Aggressiveness = 0;
-AttackRange = sprite_width/2+OBJ_Player.sprite_width/2;
+AttackRange = sprite_width/2+OBJ_Player.sprite_width/2+20;
 
 TargetX = x;
 TargetY = y;

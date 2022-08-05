@@ -12,6 +12,7 @@
     {"id":{"name":"SND_BusterEngine","path":"sounds/SND_BusterEngine/SND_BusterEngine.yy",},"order":9,},
     {"id":{"name":"SND_HitX1","path":"sounds/SND_HitX1/SND_HitX1.yy",},"order":0,},
     {"id":{"name":"SND_BusterTireScreech","path":"sounds/SND_BusterTireScreech/SND_BusterTireScreech.yy",},"order":8,},
+    {"id":{"name":"SPR_TitleBuster","path":"sprites/SPR_TitleBuster/SPR_TitleBuster.yy",},"order":39,},
     {"id":{"name":"SPR_SteaksPunch1HB","path":"sprites/SPR_SteaksPunch1HB/SPR_SteaksPunch1HB.yy",},"order":8,},
     {"id":{"name":"SPR_SteaksPunchY3HB","path":"sprites/SPR_SteaksPunchY3HB/SPR_SteaksPunchY3HB.yy",},"order":16,},
     {"id":{"name":"ATK_XXXY","path":"objects/ATK_XXXY/ATK_XXXY.yy",},"order":3,},
