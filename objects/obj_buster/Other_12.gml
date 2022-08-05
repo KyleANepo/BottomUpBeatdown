@@ -12,8 +12,22 @@ if(OBJ_Player.CurrentHP > 0){
 	{
 		sprite_index = SPR_BusterSpecial1Transform;
 		image_index = 0;
+		audio_play_sound(SND_BusterEngine, 10, false)
 		isString = 1;
 		Mortal = 0;
+	} else if (Summon > 0) {
+		sprite_index = SPR_BusterString3;
+		image_index = 0;
+		Minion1 = instance_create_layer(x+100,y+50,"Instances",OBJ_BusterMinion);
+		with (Minion1)
+		{
+		    image_xscale = other.image_xscale;
+			image_yscale = other.image_yscale;
+		    image_speed = other.image_speed;	
+		    Owner = "Enemy"; 
+			depth = depth;
+		}
+		Summon = 0;
 	} else if(AttackChance>= 66){
  
         sprite_index = SPR_BusterString1;

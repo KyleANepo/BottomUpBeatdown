@@ -1,5 +1,9 @@
 switch(State){
  
+	case "Intro":
+		sprite_index = SPR_MinionIntro;
+		break;
+ 
     case "Idle":
         sprite_index = SPR_MinionIdle;
         break;
@@ -29,5 +33,19 @@ switch(State){
 		
 	case "BDash":
 		sprite_index = SPR_BusterBDash;
+		break;
+		
+	case "Queueing":
+		if(point_distance(x,y,TargetX,TargetY) > 150){
+		    image_xscale = sign(TargetX-x);
+		}else{
+		    image_xscale = sign(OBJ_Player.x-TargetX);
+		}
+     
+		if(speed != 0){
+		    sprite_index = SPR_MinionWalk;
+		}else{
+		    sprite_index = SPR_MinionIdle;
+		}
 		break;
 }

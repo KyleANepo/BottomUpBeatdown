@@ -1,6 +1,6 @@
 //Enemy
 
-Speed = 3;
+Speed = 5;
 SpeedMod = 1;
 
 Knockback = 0;
@@ -19,7 +19,7 @@ flashAlpha = 0;
 flashColor = c_red;
 
 Phase = 1;
-State = "Idle";
+State = "Intro";
 face = 1;
 
 isString = 0; //if move is start of a string

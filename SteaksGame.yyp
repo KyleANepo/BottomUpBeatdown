@@ -49,6 +49,7 @@
     {"id":{"name":"ATK_BusterSpecial1","path":"objects/ATK_BusterSpecial1/ATK_BusterSpecial1.yy",},"order":4,},
     {"id":{"name":"ATK_VinnySpecial3","path":"objects/ATK_VinnySpecial3/ATK_VinnySpecial3.yy",},"order":2,},
     {"id":{"name":"SPR_SteaksPunch1A","path":"sprites/SPR_SteaksPunch1A/SPR_SteaksPunch1A.yy",},"order":7,},
+    {"id":{"name":"SPR_MinionIntro","path":"sprites/SPR_MinionIntro/SPR_MinionIntro.yy",},"order":6,},
     {"id":{"name":"SPR_BusterString3HB","path":"sprites/SPR_BusterString3HB/SPR_BusterString3HB.yy",},"order":12,},
     {"id":{"name":"SPR_BusterSpecial1AttackHB","path":"sprites/SPR_BusterSpecial1AttackHB/SPR_BusterSpecial1AttackHB.yy",},"order":15,},
     {"id":{"name":"OBJ_HitEffect1","path":"objects/OBJ_HitEffect1/OBJ_HitEffect1.yy",},"order":11,},

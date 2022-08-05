@@ -11,6 +11,10 @@ if (CurrentHP > 0) {
 
 	switch (State){
  
+	case "Intro":
+		event_user(3);
+		break;
+ 
     case "Idle":
         event_user(3); 
         event_user(1);
@@ -48,9 +52,12 @@ if (CurrentHP > 0) {
 		x -= face*10;
 		break;
 		
+	case "Queueing":
+		event_user(3);//Animate the Enemy
+		break;
+		
 	}
 	
-
 	
 	//Knockback
 	if (Knockback < 0) {

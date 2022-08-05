@@ -11,7 +11,10 @@ CurrentHP = clamp(CurrentHP, 0, MaxHP);
 
 
 //if alive
-if(CurrentHP > 0){
+if (intro == 1) {
+	
+}
+else if(CurrentHP > 0 && intro == 0){
 	//left or right
 	XSpeed = 0;
 	if(keyboard_check(ord("A"))){

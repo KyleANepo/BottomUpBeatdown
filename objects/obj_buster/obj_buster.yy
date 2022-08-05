@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "SPR_BusterIdle",
-    "path": "sprites/SPR_BusterIdle/SPR_BusterIdle.yy",
+    "name": "SPR_BusterString3",
+    "path": "sprites/SPR_BusterString3/SPR_BusterString3.yy",
   },
   "solid": false,
   "visible": true,
@@ -39,6 +39,7 @@
     {"isDnD":false,"eventNum":1,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":2,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":64,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":9,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],

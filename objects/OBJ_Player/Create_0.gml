@@ -15,6 +15,9 @@ IsSlip = false;
 IsGuarding = false; //negates damage, stops movement
 AttackType = 0; //id of attack
 
+alarm[9] = room_speed * 3;
+intro = 1;
+
 MaxHP = 200;
 CurrentHP = MaxHP;
 
@@ -34,3 +37,5 @@ charge = 0
 maxcharge = room_speed * 2
 
 CommandList = ds_list_create();
+
+EnemyList = ds_list_create();

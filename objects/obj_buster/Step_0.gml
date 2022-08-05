@@ -11,6 +11,10 @@ if (CurrentHP > 0) {
 
 	switch (State){
  
+	case "Intro":
+		image_xscale = -1;
+		break;
+ 
     case "Idle":
         event_user(3); 
         event_user(1);
@@ -63,7 +67,11 @@ if (CurrentHP > 0) {
 		
 	}
 	
-
+	//change speed depending on if minions exists
+	if (Minion1 != 0)
+	{ Speed = 2.5 }
+	else
+	{ Speed = 5}
 	
 	//Knockback
 	if (Knockback < 0) {

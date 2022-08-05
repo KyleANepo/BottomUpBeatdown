@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "SPR_SteaksIdle",
-    "path": "sprites/SPR_SteaksIdle/SPR_SteaksIdle.yy",
+    "name": "SPR_SteaksTaunt1",
+    "path": "sprites/SPR_SteaksTaunt1/SPR_SteaksTaunt1.yy",
   },
   "solid": false,
   "visible": true,
@@ -33,6 +33,7 @@
     {"isDnD":false,"eventNum":1,"eventType":10,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":64,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":3,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":9,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],

@@ -4,7 +4,7 @@
     "path": "sprites/SPR_MinionString1HB/SPR_MinionString1HB.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,

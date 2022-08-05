@@ -19,8 +19,9 @@ flashAlpha = 0;
 flashColor = c_red;
 
 Phase = 1;
-State = "Idle";
+State = "Intro";
 face = 1;
+alarm[9] = room_speed * 3;
 
 isString = 0; //if move is start of a string
 isArmored = false; //if move is armored
@@ -30,7 +31,12 @@ guardPoint = 3;
 
 Mortal = 0;
 hasPassed1 = false;
+hasPassed2 = false;
 hasPassed3 = false;
+
+Summon = 0;
+Minion1 = 0;
+Minion2 = 0;
 
 //aggro range
 Aggressiveness = 0;

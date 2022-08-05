@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "SPR_MinionIdle",
-    "path": "sprites/SPR_MinionIdle/SPR_MinionIdle.yy",
+    "name": "SPR_MinionIntro",
+    "path": "sprites/SPR_MinionIntro/SPR_MinionIntro.yy",
   },
   "solid": false,
   "visible": true,
@@ -39,6 +39,7 @@
     {"isDnD":false,"eventNum":1,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":2,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":64,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":1,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],

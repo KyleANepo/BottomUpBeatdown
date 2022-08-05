@@ -9,6 +9,11 @@ if(isString == 0)
 	isString -= 1;	
 }
 
+if(State == "Intro")
+{
+	sprite_index = SPR_BusterIdle;
+}
+
 //for attack strings
 if(sprite_index == SPR_BusterString2ATK1)
 {
@@ -36,7 +41,6 @@ if(sprite_index == SPR_BusterSpecial1Transform)
 	if (face == -1) x = 1270
 	else if (face == 1) x = 10
 	
-	audio_play_sound(SND_BusterEngine, 10, false)
 	instance_create_depth(x + face*40, y-80, depth - 10, OBJ_UnblockableEffect);
     MyAttack = instance_create_layer(x,y,"Instances",ATK_BusterSpecial1);
 	with (MyAttack)

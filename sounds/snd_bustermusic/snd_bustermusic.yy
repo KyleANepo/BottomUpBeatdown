@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_bustermusic.mp3",
-  "duration": 172.6868,
+  "duration": 172.59392,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
