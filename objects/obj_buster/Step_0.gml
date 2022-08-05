@@ -54,6 +54,7 @@ if (CurrentHP > 0) {
 		if (sprite_index  == SPR_BusterSpecial1Attack && image_index == 3) {
 			audio_stop_sound(SND_BusterEngine); 
 			audio_play_sound(SND_BusterTireScreech, 10, false)
+			y = OBJ_Player.GroundY
 			}
 		
 		if (sprite_index == SPR_BusterSpecial1Attack && (image_index > 3 && image_index <= 6)) x += face*60;

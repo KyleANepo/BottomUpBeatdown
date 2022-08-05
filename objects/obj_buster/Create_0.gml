@@ -5,7 +5,7 @@ SpeedMod = 1;
 
 Knockback = 0;
 
-MaxHP = 2000;
+MaxHP = 1500;
 CurrentHP = MaxHP;
 
 OnGround = true;

@@ -28,4 +28,9 @@ GroundY = y;
 
 image_speed = 1;
 
+MyAttack = 0;
+
+charge = 0
+maxcharge = room_speed * 2
+
 CommandList = ds_list_create();
