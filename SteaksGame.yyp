@@ -126,6 +126,7 @@
     {"id":{"name":"SPR_BusterString1","path":"sprites/SPR_BusterString1/SPR_BusterString1.yy",},"order":3,},
     {"id":{"name":"SPR_VinnySpecial1","path":"sprites/SPR_VinnySpecial1/SPR_VinnySpecial1.yy",},"order":2,},
     {"id":{"name":"SND_MenuMusic","path":"sounds/SND_MenuMusic/SND_MenuMusic.yy",},"order":6,},
+    {"id":{"name":"SND_HitWhiff","path":"sounds/SND_HitWhiff/SND_HitWhiff.yy",},"order":11,},
     {"id":{"name":"SPR_BusterString3","path":"sprites/SPR_BusterString3/SPR_BusterString3.yy",},"order":11,},
     {"id":{"name":"SPR_SteaksPunchY4HB","path":"sprites/SPR_SteaksPunchY4HB/SPR_SteaksPunchY4HB.yy",},"order":18,},
     {"id":{"name":"SPR_VinnySpecial1HB","path":"sprites/SPR_VinnySpecial1HB/SPR_VinnySpecial1HB.yy",},"order":3,},

@@ -1,73 +1,79 @@
 if((image_index == DMGFrame || image_index == 10 || image_index == 15) && abs(depth - other.depth) <= LayerSize && abs(y - other.y) <= LayerSize && Owner == "Enemy"){
     
-	if (other.IsParrying == false) {
+	hit = 1;
 	
-		if (other.IsGuarding == true)
-		{
-			Damage /= 10;
-		}
+	if (other.IsParrying == true && isUnblock == false) { //if parried and is attack was not unblockable
 	
-	    other.CurrentHP -= Damage;
-	    other.IsHit = true;
-	    other.alarm[3] = StunLength;
-     
-	 
-		 //hit effects
-		if (isHeavy == false) { 
-			if (other.IsGuarding == false) 
-			{
-				audio_play_sound(SND_HitX1, 10, false);
-				with (instance_create_depth(other.x-20, other.y-80, other.depth - 10, OBJ_HitEffect1)) {
-				image_angle = irandom(360);
-				}
-				other.flashColor = c_red;
-				other.flashAlpha = 1;
-			} else
-			{
-				audio_play_sound(SND_HitBlocked, 10, false);
-				instance_create_depth(other.x-20, other.y-80, other.depth - 10, OBJ_GuardEffect);
-				other.flashColor = c_white;
-				other.flashAlpha = 1;
-			}
-		} else {
-			if (other.IsGuarding == false) 
-			{
-				audio_play_sound(SND_HitY1, 10, false);
-				with (instance_create_depth(other.x-20, other.y-80, other.depth - 10, OBJ_HitEffect2)) {
-				image_angle = irandom(360);
-				}
-				other.flashColor = c_red;
-				other.flashAlpha = 1;
-			} else
-			{
-				audio_play_sound(SND_HitBlocked, 10, false);
-				instance_create_depth(other.x-20, other.y-80, other.depth - 10, OBJ_GuardEffect);
-				other.flashColor = c_white;
-				other.flashAlpha = 1;
-			}
-			hitstop(100);
-		
-			
-		}
-		
-		if (OBJ_Enemy.image_xscale < 0) {
-			other.Knockback = Knockback;
-		} else {
-			other.Knockback = -Knockback;
-		}
-	
-	} else
-	{
 		other.IsParrying = false;
+		other.IsGuarding = false;
 		other.IsSlip = true;
+		other.SpeedMod = 1;
 		other.sprite_index = SPR_SteaksSlip;
 		other.image_index = 0;
+		
+		other.CurrentHP += 5;
+		
 		other.flashColor = c_blue;
 		other.flashAlpha = 1;
 		audio_play_sound(SND_Slip, 10, false);
 		with (instance_create_depth(other.x-20, other.y-80, other.depth - 10, OBJ_ParryEffect)) {
 			image_angle = irandom(360); 
 		}
-		hitstop(100);
+		hitstop(200);
+		 
+	} else //if not parried
+	{
+		other.IsParrying = false;
+		
+		if (other.IsGuarding == true && isUnblock == false) //if guarding and not blockable, nerf damage and stun length
+		{
+			Damage /= 10;
+			StunLength /= 2;
+		} else if (isUnblock == true) 
+		{
+			other.SpeedMod = 1;
+			other.IsGuarding = false;
+		}
+	
+	
+	
+		if (other.IsGuarding == false)
+		{
+			other.IsHit = true;
+		} else
+		{
+			other.IsHitBlocked = true;
+		}
+	
+	    other.CurrentHP -= Damage; 
+	    other.alarm[3] = StunLength;
+     
+	 
+		 //hit effects
+		 
+		 if (other.IsGuarding == true && isUnblock == false)
+		 {
+			 blockatkeffects();
+		 } else
+		 {
+			 if (isHeavy == false) {
+				 lightatkeffects();
+			 } else
+			 {
+				 heavyatkeffects();
+			 }
+		 }
+		 
+		 if (isHeavy == true)
+		 {
+			 hitstop(100);
+		 }
+		 
+		 if (OBJ_Enemy.image_xscale < 0) {
+			other.Knockback = Knockback;
+		 } else {
+			other.Knockback = -Knockback;
+		}
+		
 	}
 }

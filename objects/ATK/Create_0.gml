@@ -6,4 +6,5 @@ Owner = "Player";
 DMGFrame = 3;
 isHeavy = false;
 isUnblock = false;
+hit = 0; //for attacking with lasting hitboxes and sound effects
 Knockback = 0;

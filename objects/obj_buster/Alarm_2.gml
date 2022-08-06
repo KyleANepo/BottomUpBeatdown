@@ -1,4 +1,4 @@
 if (State == "Guard")
 {
-	State = "BDash"
+	State = "Idle"
 }

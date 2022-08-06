@@ -37,7 +37,7 @@ if(OBJ_Player.CurrentHP > 0){
 			depth = depth;
 		}
 		Summon = 0;
-	} else if(AttackChance>= 66){
+	} else if(AttackChance>= 60){
  
         sprite_index = SPR_BusterString1;
 		image_index = 0;
@@ -51,7 +51,7 @@ if(OBJ_Player.CurrentHP > 0){
 			depth = depth;
 		}
 		
-	} else if (AttackChance < 66 && AttackChance >= 33) {
+	} else if (AttackChance < 60 && AttackChance >= 20) {
 		
 		sprite_index = SPR_BusterString2ATK1;
 		image_index = 0;

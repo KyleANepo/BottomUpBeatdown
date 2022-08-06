@@ -1,8 +1,25 @@
-/// @description Insert description here
-// You can write your code in this editor
+switch (Owner)
+{
+	case "Player":
+		if (OBJ_Player.IsHit == true)
+		{
+			instance_destroy();
+		}
+	break;
+		
+	case "Enemy":
+		if (OBJ_Enemy.State == "Hit")
+		{
+			instance_destroy();
+		}
+	break;
+}
 
-// Inherit the parent event
-event_inherited();
+if ((image_index == DMGFrame+1 || image_index == 10+1 || image_index == 16+1) && hit < 1)
+{
+	hit = 0	
+	audio_play_sound(SND_HitWhiff,10,false)
+}
 
 x = OBJ_Enemy.x;
 y = OBJ_Enemy.y;

@@ -9,6 +9,7 @@ image_yscale = 2;
 
 IsAttacking = false; //stops from moving if attacking, also prevents combos from being canceled prematurely
 IsHit = false; //stops from moving if getting hit
+IsHitBlocked = false; //stops from moving if getting hit but blocked
 IsJumping = false; //detects whether jump is manually pressed
 IsParrying = false; //detects if in parry state
 IsSlip = false;

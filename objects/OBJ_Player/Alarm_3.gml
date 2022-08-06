@@ -1,1 +1,2 @@
 IsHit = false;
+IsHitBlocked = false;

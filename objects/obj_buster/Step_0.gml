@@ -69,7 +69,7 @@ if (CurrentHP > 0) {
 	
 	//change speed depending on if minions exists
 	if (instance_exists(OBJ_BusterMinion))
-	{ Speed = 2 }
+	{ Speed = 1 }
 	else if (CurrentHP > 500)
 	{ Speed = 5}
 	else
