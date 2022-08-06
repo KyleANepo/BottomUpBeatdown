@@ -9,6 +9,7 @@ switch (room) {
 	
 	case r_buster:
 		audio_stop_all()
+		audio_play_sound(SND_BattleBegin, 10, false)
 		sprite_index = SPR_TitleBuster;
 		break;
 		
