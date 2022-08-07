@@ -63,6 +63,9 @@ if (CurrentHP > 0) {
 		
 		if (sprite_index == SPR_BusterSpecial1Attack && (image_index > 3 && image_index <= 6)) x += face*60;
 		else if (sprite_index == SPR_BusterSpecial1Attack && image_index == 7) Knockback = -face*30 
+		
+		
+		
 		break;
 		
 	}

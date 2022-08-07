@@ -67,6 +67,8 @@ if (CurrentHP > 0) {
 		x -= Knockback;
 		Knockback -= 2;
 	}
+	
+	
 
 } else
 {

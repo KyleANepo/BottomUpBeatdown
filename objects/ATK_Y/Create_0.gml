@@ -1,6 +1,7 @@
 event_inherited();
-Damage = 500;
+Damage = 750;
 StunLength = 50;
-DMGFrame = 6;
-Knockback = 20;
+DMGFrame = 4;
+Knockback = 30;
 isHeavy = true;
+isUnblock = true;

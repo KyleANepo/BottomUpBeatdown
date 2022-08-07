@@ -9,7 +9,6 @@ draw_ellipse(x-40,GroundY-8,x+40,GroundY+8,false);
 draw_set_alpha(1);
 draw_self();
 
-draw_text(x,y,IsHit);
 
 if (flashAlpha > 0) {
 	shader_set(sh_FlashRed);
