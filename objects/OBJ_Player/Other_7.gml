@@ -3,6 +3,10 @@ if(IsAttacking == true){
     SpeedMod = 1;
 }
 
+if(IsAttackingAir == true){
+    IsAttackingAir = false;
+}
+
 if(sprite_index == SPR_SteaksParry){
 	IsParrying = false;
 }

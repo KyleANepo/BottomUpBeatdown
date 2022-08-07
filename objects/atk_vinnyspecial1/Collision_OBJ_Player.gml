@@ -11,6 +11,7 @@ if(sprite_is_on_frame(DMGFrame) && abs(depth - other.depth) <= LayerSize && abs(
 		other.sprite_index = SPR_SteaksSlip;
 		other.image_index = 0;
 		
+		other.SuperMeter += 2;
 		other.CurrentHP += 5;
 		
 		other.flashColor = c_blue;

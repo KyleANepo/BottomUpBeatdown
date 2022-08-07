@@ -92,6 +92,36 @@ if(IsHit == false && CurrentHP > 0 ){
 		    Owner = "Player"; 
 		}
 	}
+	else if(AttackType == "Super1" && IsAttacking == true && SuperMeter >= 20 && sprite_index != SPR_SteaksPunchSuper1){
+		SuperMeter -= 20;
+		superATKEffects()
+	    sprite_index = SPR_SteaksPunchSuper2;
+		image_index = 0;
+	    MyAttack = instance_create_layer(x,y,"Instances",ATK_Super2);
+		with (MyAttack)
+		{
+		    image_xscale = other.image_xscale;
+			image_yscale = other.image_yscale;
+		    image_speed = other.image_speed;
+			OwnerID = other.id;
+		    Owner = "Player"; 
+		}
+	}
+	else if(AttackType == "Super1" && IsAttacking == false && SuperMeter >= 20){
+		SuperMeter -= 20;
+		superATKEffects()
+	    sprite_index = SPR_SteaksPunchSuper1;
+		image_index = 0;
+	    MyAttack = instance_create_layer(x,y,"Instances",ATK_Super1);
+		with (MyAttack)
+		{
+		    image_xscale = other.image_xscale;
+			image_yscale = other.image_yscale;
+		    image_speed = other.image_speed;
+			OwnerID = other.id;
+		    Owner = "Player"; 
+		}
+	}
 }
  
 if(MyAttack != 0){

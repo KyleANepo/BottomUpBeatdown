@@ -1,3 +1,5 @@
+if (intro == 0)
+{
 AttackType = "";
 ButtonCombo = "";
  
@@ -35,6 +37,8 @@ while(ds_list_size(CommandList) > 4){
 //X
 //Y
 
+ButtonCombo = string_delete(ButtonCombo,1,1);
+
 if(ds_list_find_value(CommandList,ds_list_size(CommandList)-1) == "SAtk" && ds_list_find_value(CommandList,ds_list_size(CommandList)-2) == "LAtk" && ds_list_find_value(CommandList,ds_list_size(CommandList)-3) == "LAtk" && ds_list_find_value(CommandList,ds_list_size(CommandList)-4) == "LAtk"){
     AttackType = "XXXY";
 	ds_list_clear(CommandList);
@@ -54,6 +58,8 @@ if(ds_list_find_value(CommandList,ds_list_size(CommandList)-1) == "SAtk" && ds_l
     AttackType = "X";
 }else if(ds_list_find_value(CommandList,ds_list_size(CommandList)-1) == "SAtk"){
     AttackType = "Y";
+}else if(ButtonCombo == "LAtk+SAtk"){
+    AttackType = "Super1";
 }
 
 if(OnGround == true && IsGuarding == false && IsParrying == false){
@@ -63,4 +69,5 @@ if(OnGround == true && IsGuarding == false && IsParrying == false){
 if(OnGround == false && IsHit == false)
 {
 	event_user(3);
+}
 }

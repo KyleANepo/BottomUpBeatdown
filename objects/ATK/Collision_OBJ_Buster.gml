@@ -7,6 +7,8 @@ if(sprite_is_on_frame(DMGFrame) && abs(depth - other.depth) <= LayerSize && Owne
 		    other.CurrentHP -= Damage;
 		    other.State = "Hit";
 		    other.alarm[0] = StunLength;
+			
+			OBJ_Player.SuperMeter += 1;
 	
 			//Hit effects
 			if (isHeavy == false) { 

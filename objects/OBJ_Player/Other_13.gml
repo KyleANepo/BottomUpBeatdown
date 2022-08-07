@@ -1,5 +1,7 @@
+var MyAttack = 0;
+
 if(IsHit == false && CurrentHP > 0){
-	if((AttackType == "X" || AttackType == "Y") && IsAttacking == false) {
+	if((AttackType == "X" || AttackType == "Y") && IsAttackingAir == false) {
 	    sprite_index = SPR_SteaksAirPunchY;
 		image_index = 0;
 	    MyAttack = instance_create_layer(x,y,"Instances",ATK_YAir);
@@ -13,3 +15,7 @@ if(IsHit == false && CurrentHP > 0){
 		}
 	}
 }
+
+if(MyAttack != 0){
+    IsAttackingAir = true;
+} 

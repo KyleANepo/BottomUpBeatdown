@@ -97,6 +97,9 @@ if (CurrentHP > 0) {
 		Knockback -= 2;
 	}
 
+}else
+{
+	fadetoroom(r_menu, 50, c_white);
 }
 
 if(OnGround == true){

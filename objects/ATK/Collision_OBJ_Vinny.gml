@@ -8,6 +8,8 @@ if(sprite_is_on_frame(DMGFrame) && abs(depth - other.depth) <= LayerSize && Owne
 		    other.State = "Hit";
 		    other.alarm[0] = StunLength;
 	
+			OBJ_Player.SuperMeter += 1;
+	
 			//Hit effects
 			if (isHeavy == false) { 
 				audio_play_sound(SND_HitX1, 10, false);

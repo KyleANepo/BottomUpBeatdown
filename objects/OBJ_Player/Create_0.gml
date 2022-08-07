@@ -10,6 +10,7 @@ image_yscale = 2;
 reflecty = y;
 
 IsAttacking = false; //stops from moving if attacking, also prevents combos from being canceled prematurely
+IsAttackingAir = false;
 IsHit = false; //stops from moving if getting hit
 IsHitBlocked = false; //stops from moving if getting hit but blocked
 IsJumping = false; //detects whether jump is manually pressed
@@ -35,6 +36,8 @@ GroundY = y;
 image_speed = 1;
 
 MyAttack = 0;
+
+SuperMeter = 20;
 
 charge = 0
 maxcharge = room_speed * 2

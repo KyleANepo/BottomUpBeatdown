@@ -1,4 +1,5 @@
 
+SuperMeter = clamp(SuperMeter,0,20)
 x=clamp(x, 30, room_width-30);
 if (OnGround == true) {
 	y=clamp(y, 325, room_height);
@@ -91,8 +92,27 @@ else if(CurrentHP > 0 && intro == 0){
 	} else if((IsGuarding == true && IsParrying == false && sprite_index != SPR_SteaksSlip) || (IsHitBlocked == true)) {
 		sprite_index = SPR_SteaksGuard;
 	}
+	
+	switch (sprite_index)
+	{
+		case SPR_SteaksPunchSuper1:
+			if (sprite_is_on_frame(4))
+			{
+				x += 70*sign(image_xscale)
+			}
+			break;
+			
+		case SPR_SteaksPunchSuper2:
+			if (image_index >= 4 && image_index <= 10)
+			{
+				x += 4*sign(image_xscale)
+			}
+			break;
+	}
+	
+	
 }else{
-	fadetoroom(r_menu, 50, c_black);
+	fadetoroom(r_menu, 50, c_white);
 	//if hp 0, kill
 }
 

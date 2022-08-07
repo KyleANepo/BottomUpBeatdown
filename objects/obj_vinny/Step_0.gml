@@ -113,6 +113,9 @@ if (CurrentHP > 0) {
 		}
 	}
 
+} else
+{
+	fadetoroom(r_menu, 50, c_white);
 }
 
 if(OnGround == true){

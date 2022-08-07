@@ -11,6 +11,7 @@ if((image_index == DMGFrame || image_index == DMGFrame+3 || image_index == DMGFr
 		other.sprite_index = SPR_SteaksSlip;
 		other.image_index = 0;
 		
+		other.SuperMeter += 2;
 		other.CurrentHP += 5;
 		
 		other.flashColor = c_blue;

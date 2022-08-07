@@ -8,6 +8,8 @@ if(image_index >= DMGFrame && hit < 1 && abs(OBJ_Player.GroundY - other.GroundY)
 		    other.State = "Hit";
 		    other.alarm[0] = StunLength;
 	
+			OBJ_Player.SuperMeter += 1;
+	
 			//Hit effects
 			if (isHeavy == false) { 
 				audio_play_sound(SND_HitX1, 10, false);
