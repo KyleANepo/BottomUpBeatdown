@@ -52,10 +52,6 @@ if (CurrentHP > 0) {
 		x -= face*10;
 		break;
 		
-	case "Queueing":
-		event_user(3);//Animate the Enemy
-		break;
-		
 	}
 	
 	

@@ -49,7 +49,17 @@ if (CurrentHP > 0) {
 		
 	case "BDash":
 		event_user(3);
-		x -= face*10;
+		if (x < 150)
+		{
+			x -= -10;
+		} else if (x > room_width-150)
+		{
+			x -= 10;
+		} else
+		{
+			x -= face*10;
+		}
+		
 		break;
 		
 	case "Attacking": //any special movement cases

@@ -1,5 +1,5 @@
 event_inherited();
-Damage = 750;
+Damage = 50;
 StunLength = 50;
 DMGFrame = 4;
 Knockback = 30;

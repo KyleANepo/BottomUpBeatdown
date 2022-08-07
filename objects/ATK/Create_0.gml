@@ -3,6 +3,7 @@ depth = -1*y;
 Damage = 10;
 StunLength = 4;
 Owner = "Player";
+OwnerID = "";
 DMGFrame = 3;
 isHeavy = false;
 isUnblock = false;

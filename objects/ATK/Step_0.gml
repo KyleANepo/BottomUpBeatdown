@@ -1,14 +1,14 @@
 switch (Owner)
 {
 	case "Player":
-		if (OBJ_Player.IsHit == true)
+		if (OwnerID.IsHit == true)
 		{
 			instance_destroy();
 		}
 	break;
 		
 	case "Enemy":
-		if (OBJ_Enemy.State == "Hit")
+		if (OwnerID.State == "Hit")
 		{
 			instance_destroy();
 		}

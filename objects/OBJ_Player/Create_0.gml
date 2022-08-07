@@ -7,6 +7,8 @@ JumpSpeed = 10;
 image_xscale = 2;
 image_yscale = 2;
 
+reflecty = y;
+
 IsAttacking = false; //stops from moving if attacking, also prevents combos from being canceled prematurely
 IsHit = false; //stops from moving if getting hit
 IsHitBlocked = false; //stops from moving if getting hit but blocked
@@ -40,3 +42,5 @@ maxcharge = room_speed * 2
 CommandList = ds_list_create();
 
 EnemyList = ds_list_create();
+
+curRoom = room;

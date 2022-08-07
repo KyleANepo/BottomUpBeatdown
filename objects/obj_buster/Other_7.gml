@@ -26,6 +26,7 @@ if(sprite_index == SPR_BusterString2ATK1)
 		image_xscale = other.image_xscale;
 		image_yscale = other.image_yscale;
 		image_speed = other.image_speed;	
+		OwnerID = other.id;
 		Owner = "Enemy"; 
 		depth = depth;
 	}
@@ -48,6 +49,7 @@ if(sprite_index == SPR_BusterSpecial1Transform)
 		image_xscale = other.image_xscale;
 		image_yscale = other.image_yscale;
 		image_speed = other.image_speed;	
+		OwnerID = other.id;
 		Owner = "Enemy"; 
 		depth = depth;
 	}

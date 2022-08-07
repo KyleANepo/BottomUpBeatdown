@@ -11,8 +11,6 @@ if (sprite_index != SPR_BusterSpecial1Attack)
 draw_set_alpha(1);
 draw_self();
 
-//draw_text(x,y,Minion1);
-//draw_text(x,y+20,hasPassed1);
 
 if (flashAlpha > 0) {
 	shader_set(sh_FlashRed);

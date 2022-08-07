@@ -25,6 +25,7 @@ if(OBJ_Player.CurrentHP > 0){
 		    image_xscale = other.image_xscale;
 			image_yscale = other.image_yscale;
 		    image_speed = other.image_speed;	
+			OwnerID = other.id;
 		    Owner = "Enemy"; 
 			depth = depth;
 		}
@@ -34,6 +35,7 @@ if(OBJ_Player.CurrentHP > 0){
 		    image_xscale = other.image_xscale;
 			image_yscale = other.image_yscale;
 		    image_speed = other.image_speed;	
+			OwnerID = other.id;
 		    Owner = "Enemy"; 
 			depth = depth;
 		}
@@ -48,6 +50,7 @@ if(OBJ_Player.CurrentHP > 0){
 		    image_xscale = other.image_xscale;
 			image_yscale = other.image_yscale;
 		    image_speed = other.image_speed;	
+			OwnerID = other.id;
 		    Owner = "Enemy"; 
 			depth = depth;
 		}
@@ -63,6 +66,7 @@ if(OBJ_Player.CurrentHP > 0){
 		    image_xscale = other.image_xscale;
 			image_yscale = other.image_yscale;
 		    image_speed = other.image_speed;	
+			OwnerID = other.id;
 		    Owner = "Enemy"; 
 			depth = depth;
 		}
@@ -78,6 +82,7 @@ if(OBJ_Player.CurrentHP > 0){
 		    image_xscale = other.image_xscale;
 			image_yscale = other.image_yscale;
 		    image_speed = other.image_speed;	
+			OwnerID = other.id;
 		    Owner = "Enemy"; 
 			depth = depth;
 		}

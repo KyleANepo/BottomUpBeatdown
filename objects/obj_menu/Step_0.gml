@@ -43,6 +43,10 @@ if select {
 					fadetoroom(r_vinny, 10, c_black);
 				break;
 				case 2:
+					//Pork
+					fadetoroom(r_pork, 10, c_black);
+				break;
+				case 3:
 					sub_menu = 0;
 					index = 0;
 				break;

@@ -17,3 +17,26 @@ if (flashAlpha > 0) {
 	
 	shader_reset();
 }
+
+//reflection
+//Draw reflected player sprite
+//Get player y offset for reflection
+if (room == r_pork)
+{
+	var yoff = (OBJ_Player.sprite_height - OBJ_Player.sprite_yoffset)*2;
+
+	//Set blendmode
+	gpu_set_blendmode_ext(bm_dest_alpha, bm_inv_src_alpha);
+
+	//Draw reflection
+
+	if (OnGround == true)
+	{
+		draw_sprite_ext(OBJ_Player.sprite_index, OBJ_Player.image_index, OBJ_Player.x, (OBJ_Player.y+yoff), OBJ_Player.image_xscale, -OBJ_Player.image_yscale, 0, c_dkgray, 0.3);
+	} else
+	{
+		draw_sprite_ext(OBJ_Player.sprite_index, OBJ_Player.image_index, OBJ_Player.x, (reflecty+yoff), OBJ_Player.image_xscale, -OBJ_Player.image_yscale, 0, c_dkgray, 0.3);
+	}
+	//Reset blendmode
+	gpu_set_blendmode(bm_normal);
+}

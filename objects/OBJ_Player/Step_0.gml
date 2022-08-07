@@ -42,8 +42,6 @@ else if(CurrentHP > 0 && intro == 0){
 		Knockback -= 2;
 	}
 	
-	
-	
 	//Movement
 	if(IsAttacking == false && IsHit = false && IsParrying == false && IsGuarding == false){     
 	    //If the player is on the ground move them with XSpeed and YSpeed, otherwise ignore YSpeed
@@ -75,7 +73,6 @@ else if(CurrentHP > 0 && intro == 0){
 		    sprite_index = SPR_SteaksWalk;
 		} 
 	
-	
 		//Jumping
 		if ((keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("M"))) && OnGround == true){
 			OnGround = false;	
@@ -97,8 +94,10 @@ else if(CurrentHP > 0 && intro == 0){
 //If the player is on the ground, this sets their GroundY variable to their current y position
 if(OnGround == true){
     GroundY = y;
+	reflecty = y;
 } else if (IsJumping == true && OnGround == false) { //fake gravity
 	y -= JumpSpeed;
+	reflecty += JumpSpeed;
 	JumpSpeed -= .5
 	if (y >= GroundY)
 	{

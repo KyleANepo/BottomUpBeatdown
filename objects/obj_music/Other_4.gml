@@ -18,4 +18,10 @@ switch (room) {
 		audio_play_sound(SND_VinnyMusic, 10, true)
 		break;
 	
+	case r_pork:
+		audio_stop_all()
+		audio_play_sound(SND_PorkMusic, 10, true)
+		break;
+		
+	
 }
