@@ -1,11 +1,11 @@
 //Enemy
 
-Speed = 5;
+Speed = 7;
 SpeedMod = 1;
 
 Knockback = 0;
 
-MaxHP = 2500;
+MaxHP = 2000;
 CurrentHP = MaxHP;
 
 OnGround = true;
@@ -19,8 +19,9 @@ flashAlpha = 0;
 flashColor = c_red;
 
 Phase = 1;
-State = "Idle";
+State = "Intro";
 face = 1;
+alarm[9] = room_speed * 3;
 
 isString = 0; //if move is start of a string
 isArmored = false; //if move is armored

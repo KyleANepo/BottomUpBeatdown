@@ -4,3 +4,4 @@ StunLength = 50;
 DMGFrame = 3;
 Knockback = 30;
 isHeavy = true;
+isUnblock = true;

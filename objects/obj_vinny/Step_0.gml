@@ -10,7 +10,11 @@ if (CurrentHP > 0) {
 	event_user(0);
 
 	switch (State){
- 
+	
+	case "Intro":
+		image_xscale = -1;
+		break;
+	
     case "Idle":
         event_user(3); 
         event_user(1);
@@ -59,7 +63,11 @@ if (CurrentHP > 0) {
 		
 	case "BDash":
 		event_user(3);
-		x -= face*10;
+		if (Phase == 1) {
+			x -= face*10;
+			} else {
+			x -= face*20;
+			}
 		break;
 		
 	}
@@ -77,24 +85,28 @@ if (CurrentHP > 0) {
 	//special 4
 	if (sprite_index == SPR_VinnySpecial4)
 	{
-		if (image_index == 6 || image_index == 12) 
+		if (sprite_is_on_frame(6)|| sprite_is_on_frame(12)) 
 		{
+			audio_play_sound(SND_HitWhiff,10,false)
 			MyAttack = instance_create_layer(OBJ_Player.x,OBJ_Player.GroundY,"Instances",ATK_VinnySpecial4);
 			with (MyAttack)
 			{
 				image_xscale = other.image_xscale;
 				image_yscale = other.image_yscale;
 				image_speed = other.image_speed;	
+				OwnerID = other.id;
 				Owner = "Enemy"; 
 				depth = depth;
 			}
-		} else if (image_index == 9) {
+		} else if (sprite_is_on_frame(9)) {
+			audio_play_sound(SND_HitWhiff,10,false)
 			MyAttack = instance_create_layer(OBJ_Player.x,OBJ_Player.GroundY,"Instances",ATK_VinnySpecial4);
 			with (MyAttack)
 			{
 				image_xscale = other.image_xscale*-1;
 				image_yscale = other.image_yscale;
 				image_speed = other.image_speed;	
+				OwnerID = other.id;
 				Owner = "Enemy"; 
 				depth = depth;
 			}

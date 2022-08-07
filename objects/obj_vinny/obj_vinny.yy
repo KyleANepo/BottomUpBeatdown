@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "SPR_VinnyIdle",
-    "path": "sprites/SPR_VinnyIdle/SPR_VinnyIdle.yy",
+    "name": "SPR_VinnySpecial1",
+    "path": "sprites/SPR_VinnySpecial1/SPR_VinnySpecial1.yy",
   },
   "solid": false,
   "visible": true,
@@ -40,6 +40,7 @@
     {"isDnD":false,"eventNum":2,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":64,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":16,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":9,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],

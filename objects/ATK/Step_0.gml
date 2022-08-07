@@ -15,7 +15,7 @@ switch (Owner)
 	break;
 }
 
-if (image_index == DMGFrame+1 && hit < 1)
+if (sprite_is_on_frame(DMGFrame+1) && hit < 1)
 {
 	hit = 0	
 	audio_play_sound(SND_HitWhiff,10,false)

@@ -15,7 +15,8 @@ switch (room) {
 		
 	case r_vinny:
 		audio_stop_all()
-		audio_play_sound(SND_VinnyMusic, 10, true)
+		audio_play_sound(SND_BattleBegin, 10, false)
+		sprite_index = SPR_TitleVinny;
 		break;
 	
 	case r_pork:

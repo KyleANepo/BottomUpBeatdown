@@ -42,6 +42,11 @@ else if(CurrentHP > 0 && intro == 0){
 		Knockback -= 2;
 	}
 	
+	if (curRoom == r_pork and sprite_index == SPR_SteaksWalk and (sprite_is_on_frame(1) || sprite_is_on_frame(3) || sprite_is_on_frame(5) || sprite_is_on_frame(7)))
+	{
+		instance_create_depth(x, y, depth, OBJ_WaterEffect);
+	}
+	
 	//Movement
 	if(IsAttacking == false && IsHit = false && IsParrying == false && IsGuarding == false){     
 	    //If the player is on the ground move them with XSpeed and YSpeed, otherwise ignore YSpeed

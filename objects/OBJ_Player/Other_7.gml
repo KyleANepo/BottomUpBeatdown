@@ -15,7 +15,3 @@ if(sprite_index == SPR_SteaksSlip){
 	sprite_index = SPR_SteaksIdle;
 }
 
-if (curRoom == r_pork and sprite_index == SPR_SteaksWalk)
-{
-	instance_create_depth(x, y, depth, OBJ_WaterEffect);
-}

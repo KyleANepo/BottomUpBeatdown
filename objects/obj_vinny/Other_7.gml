@@ -9,6 +9,11 @@ if(isString == 0)
 	isString -= 1;	
 }
 
+if(State == "Intro")
+{
+	sprite_index = SPR_VinnyIdle;
+}
+
 if(State == "Phase2Transition")
 {
 	isArmored = false;
@@ -31,6 +36,7 @@ if(sprite_index == SPR_VinnyString1ATK1)
 		image_xscale = other.image_xscale;
 		image_yscale = other.image_yscale;
 		image_speed = other.image_speed;	
+		OwnerID = other.id;
 		Owner = "Enemy"; 
 		depth = depth;
 	}
@@ -45,7 +51,8 @@ if(sprite_index == SPR_VinnyString2ATK1)
 	{
 		image_xscale = other.image_xscale;
 		image_yscale = other.image_yscale;
-		image_speed = other.image_speed;	
+		image_speed = other.image_speed;
+		OwnerID = other.id;
 		Owner = "Enemy"; 
 		depth = depth;
 	}
