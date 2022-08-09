@@ -7,4 +7,5 @@ function heavyatkeffects(){
 	}
 	other.flashColor = c_red;
 	other.flashAlpha = 1;
+	global.shake = true;
 }

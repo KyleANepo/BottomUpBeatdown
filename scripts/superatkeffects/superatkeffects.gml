@@ -5,4 +5,5 @@ function superATKEffects(){
 	instance_create_depth(other.x, other.y-130, other.depth - 10, OBJ_DeadlyAttack);
 	flashColor = c_yellow;
 	flashAlpha = 1;
+	global.shake = true;
 }
