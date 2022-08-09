@@ -17,7 +17,7 @@ if(OnGround == true){
 	        }
 	    } else
 		{
-			Aggressiveness += .01;
+			Aggressiveness += .02;
 	        if(random(1) < Aggressiveness*.07){
 				isRanged = true;
 	            event_user(6);//Attack Event

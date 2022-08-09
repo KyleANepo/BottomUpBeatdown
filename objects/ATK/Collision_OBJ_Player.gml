@@ -1,4 +1,4 @@
-if(sprite_is_on_frame(DMGFrame) && abs(depth - other.depth) <= LayerSize && abs(y - other.GroundY) <= LayerSize && Owner == "Enemy"){
+if(sprite_is_on_frame(DMGFrame) && abs(depth - other.depth) <= LayerSize && abs(y - other.GroundY) <= LayerSize && Owner == "Enemy" && other.IsDodging == false){
      
 	hit = 1;
 	 

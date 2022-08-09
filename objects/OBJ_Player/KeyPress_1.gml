@@ -22,6 +22,18 @@ if(IsHit == false && CurrentHP > 0 && OnGround == true && IsAttacking == false &
 	}
 }
 
+//Dodging
+if(IsHit == false && CurrentHP > 0 && OnGround == true && IsAttacking == false && IsParrying == false && IsGuarding == false && sprite_index != SPR_SteaksDodge){
+	if (keyboard_check(vk_space)){
+		IsDodging = true;
+		audio_play_sound(SND_Dodge,10,false)
+		sprite_index = SPR_SteaksDodge;
+		image_index = 0;
+		Knockback -= 20*sign(image_xscale);
+	}
+}
+
+
 ds_list_add(CommandList, string_delete(ButtonCombo,1,1));
 alarm[0] = 20;
 

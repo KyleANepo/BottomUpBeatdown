@@ -25,6 +25,24 @@ if(State == "BDash")
 	State = "Idle";
 }
 
+if(sprite_index == SPR_VinnyString1ATK2 && Phase == 2)
+{
+	sprite_index = SPR_VinnySpecial1;
+	image_index = 2;
+	unblockEffects();
+    MyAttack = instance_create_layer(x,y,"Instances",ATK_VinnySpecial1);
+	with (MyAttack)
+	{
+		image_index = 2;
+		image_xscale = other.image_xscale;
+		image_yscale = other.image_yscale;
+		image_speed = other.image_speed;	
+		OwnerID = other.id;
+		Owner = "Enemy"; 
+		depth = depth;
+	}
+}
+
 if(sprite_index == SPR_VinnyString1ATK1)
 {
 	sprite_index = SPR_VinnyString1ATK2;
@@ -41,6 +59,8 @@ if(sprite_index == SPR_VinnyString1ATK1)
 		depth = depth;
 	}
 }
+
+
 
 if(sprite_index == SPR_VinnyString2ATK1)
 {

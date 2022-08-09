@@ -1,4 +1,4 @@
-if(image_index == DMGFrame && abs(depth - other.depth) <= LayerSize && abs(y - other.GroundY) <= LayerSize && Owner == "Enemy" && other.IsJumping == false){
+if(image_index == DMGFrame && abs(depth - other.depth) <= LayerSize && abs(y - other.GroundY) <= LayerSize && Owner == "Enemy" && other.IsJumping == false && other.IsDodging == false){
      
 	hit = 1;
 	 

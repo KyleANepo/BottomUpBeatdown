@@ -48,8 +48,12 @@ else if(CurrentHP > 0 && intro == 0){
 		instance_create_depth(x, y, depth, OBJ_WaterEffect);
 	}
 	
+	if(sprite_is_on_frame(3) && sprite_index == SPR_SteaksDodge || sprite_index != SPR_SteaksDodge){
+		IsDodging = false;
+	}
+	
 	//Movement
-	if(IsAttacking == false && IsHit = false && IsParrying == false && IsGuarding == false){     
+	if(IsAttacking == false && IsHit = false && IsParrying == false && IsGuarding == false && sprite_index != SPR_SteaksDodge){     
 	    //If the player is on the ground move them with XSpeed and YSpeed, otherwise ignore YSpeed
 	    if(OnGround == true){
 			if(XSpeed != 0 && YSpeed != 0){
@@ -105,7 +109,7 @@ else if(CurrentHP > 0 && intro == 0){
 		case SPR_SteaksPunchSuper2:
 			if (image_index >= 4 && image_index <= 10)
 			{
-				x += 4*sign(image_xscale)
+				x += 8*sign(image_xscale)
 			}
 			break;
 	}

@@ -84,9 +84,10 @@ if (CurrentHP > 0) {
 	if (instance_exists(OBJ_BusterMinion))
 	{ Speed = 1 }
 	else if (CurrentHP > 500)
-	{ Speed = 5}
+	{ Speed = 6}
 	else
-	{ Speed = 7}
+	{ Speed = 8
+	}
 	
 	//Knockback
 	if (Knockback < 0) {

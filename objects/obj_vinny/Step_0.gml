@@ -1,5 +1,5 @@
 //boundaries
-x=clamp(x, 0, room_width);
+x=clamp(x, 30, room_width-30);
 y=clamp(y, 325, room_height);
 
 CurrentHP = clamp(CurrentHP, 0, MaxHP);

@@ -19,3 +19,8 @@ if(sprite_index == SPR_SteaksSlip){
 	sprite_index = SPR_SteaksIdle;
 }
 
+if(sprite_index == SPR_SteaksDodge){
+	SpeedMod = 1
+	IsDodging = false;
+	sprite_index = SPR_SteaksIdle;
+}

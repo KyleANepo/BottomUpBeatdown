@@ -1,4 +1,4 @@
-if((image_index == DMGFrame || image_index == 10 || image_index == 15) && abs(depth - other.depth) <= LayerSize && abs(y - other.GroundY) <= LayerSize && Owner == "Enemy"){
+if((sprite_is_on_frame(DMGFrame) || sprite_is_on_frame(DMGFrame+5) || sprite_is_on_frame(DMGFrame+10)) && abs(depth - other.depth) <= LayerSize && abs(y - other.GroundY) <= LayerSize && Owner == "Enemy" && other.IsDodging == false){
     
 	hit = 1;
 	

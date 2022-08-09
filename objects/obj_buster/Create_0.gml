@@ -1,6 +1,6 @@
 //Enemy
 
-Speed = 5;
+Speed = 6;
 SpeedMod = 1;
 
 Knockback = 0;

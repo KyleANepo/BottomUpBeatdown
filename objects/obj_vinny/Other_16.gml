@@ -30,7 +30,7 @@ if(OBJ_Player.CurrentHP > 0){
  
 	        sprite_index = SPR_VinnyString1ATK1;
 			image_index = 0;
-			isString = 1;
+			isString = 2;
 	        MyAttack = instance_create_layer(x,y,"Instances",ATK_VinnyString1ATK1);
 			with (MyAttack)
 			{
@@ -61,7 +61,6 @@ if(OBJ_Player.CurrentHP > 0){
  
 	        sprite_index = SPR_VinnySpecial1;
 			image_index = 0;
-			isArmored = true;
 			unblockEffects();
 	        MyAttack = instance_create_layer(x,y,"Instances",ATK_VinnySpecial1);
 			with (MyAttack)

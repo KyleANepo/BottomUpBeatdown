@@ -16,8 +16,10 @@ IsHitBlocked = false; //stops from moving if getting hit but blocked
 IsJumping = false; //detects whether jump is manually pressed
 IsParrying = false; //detects if in parry state
 IsSlip = false;
+IsDodging = false;
 IsGuarding = false; //negates damage, stops movement
 AttackType = 0; //id of attack
+Cancel = false;
 
 alarm[9] = room_speed * 3;
 intro = 1;
