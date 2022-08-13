@@ -1,4 +1,4 @@
-if(image_index >= DMGFrame && hit < 1 && abs(OBJ_Player.GroundY - other.GroundY) <= LayerSize && Owner == "Player" && other.State != "BDash"){
+if(image_index >= DMGFrame && hit < 1 && abs(OBJ_Player.GroundY - other.GroundY) <= LayerSize && Owner == "Player" && other.State != "BDash" && other.sprite_index != SPR_PorkSpecial1ATK1 && other.sprite_index != SPR_PorkSpecial2 && other.sprite_index != SPR_PorkSpecial3){
     
 	hit = 1;
 	
@@ -74,4 +74,17 @@ if(image_index >= DMGFrame && hit < 1 && abs(OBJ_Player.GroundY - other.GroundY)
 				other.isCounter = true;
 			}
 	}
+} else if (sprite_is_on_frame(DMGFrame) && abs(depth - other.depth) <= LayerSize && Owner == "Player" && other.State != "BDash" && other.sprite_index == SPR_PorkSpecial1ATK1) {
+	
+	other.flashColor = c_blue;
+	other.flashAlpha = 1;
+	audio_play_sound(SND_Slip, 10, false);
+	with (instance_create_depth(other.x-20, other.y-80, other.depth - 10, OBJ_ParryEffect)) {
+		image_angle = irandom(360); 
+	}
+	hitstop(200);
+	
+	other.isCounter = true;
+	
 }
+

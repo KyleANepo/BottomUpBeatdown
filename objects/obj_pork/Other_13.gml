@@ -28,6 +28,6 @@ switch(State){
 		break;
 		
 	case "BDash":
-		sprite_index = SPR_BusterBDash;
+		sprite_index = SPR_PorkBDash;
 		break;
 }

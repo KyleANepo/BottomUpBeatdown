@@ -4,7 +4,7 @@
     "path": "sprites/SPR_PorkSpecial3HB/SPR_PorkSpecial3HB.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,

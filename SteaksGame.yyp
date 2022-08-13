@@ -128,6 +128,7 @@
     {"id":{"name":"SPR_VinnyString2ATK1","path":"sprites/SPR_VinnyString2ATK1/SPR_VinnyString2ATK1.yy",},"order":9,},
     {"id":{"name":"SPR_BusterString2ATK1","path":"sprites/SPR_BusterString2ATK1/SPR_BusterString2ATK1.yy",},"order":7,},
     {"id":{"name":"SPR_MinionHit","path":"sprites/SPR_MinionHit/SPR_MinionHit.yy",},"order":2,},
+    {"id":{"name":"SPR_PorkBDash","path":"sprites/SPR_PorkBDash/SPR_PorkBDash.yy",},"order":23,},
     {"id":{"name":"ATK_VinnyCounter","path":"objects/ATK_VinnyCounter/ATK_VinnyCounter.yy",},"order":0,},
     {"id":{"name":"ATK_XX","path":"objects/ATK_XX/ATK_XX.yy",},"order":1,},
     {"id":{"name":"OBJ_UnblockableEffect","path":"objects/OBJ_UnblockableEffect/OBJ_UnblockableEffect.yy",},"order":22,},

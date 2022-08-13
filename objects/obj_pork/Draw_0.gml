@@ -1,6 +1,6 @@
 //shadow
 
-if (sprite_index != SPR_BusterSpecial1Attack)
+if (sprite_index != SPR_PorkBDash && sprite_index != SPR_PorkSpecial3)
 {
 	draw_set_alpha(.6);
 	draw_set_color(c_black);

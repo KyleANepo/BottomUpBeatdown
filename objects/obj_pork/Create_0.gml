@@ -2,12 +2,12 @@
 
 curRoom = room
 
-Speed = 8;
+Speed = 9;
 SpeedMod = 1;
 
 Knockback = 0;
 
-MaxHP = 3000;
+MaxHP = 2500;
 CurrentHP = MaxHP;
 
 OnGround = true;
@@ -29,6 +29,7 @@ isString = 0; //if move is start of a string
 isArmored = false; //if move is armored
 isCounter = false;
 isRanged = false; //if moves should be ranged/projectiled
+isInvincible = false;
 guardPoint = 3;
 
 Mortal = 0;
@@ -36,9 +37,7 @@ hasPassed1 = false;
 hasPassed2 = false;
 hasPassed3 = false;
 
-Summon = 0;
-Minion1 = 0;
-Minion2 = 0;
+
 
 //aggro range
 Aggressiveness = 0;

@@ -49,7 +49,7 @@ if (CurrentHP > 0) {
 		
 	case "BDash":
 		event_user(3);
-		x -= face*12;
+		x -= face*10;
 		break;
 		
 	case "Attacking": //any special movement cases
@@ -58,13 +58,31 @@ if (CurrentHP > 0) {
 		if (sprite_index == SPR_PorkSpecial3 && sprite_is_on_frame(15))
 		{
 			x = OBJ_Player.x - sign(face)*100
-			y = OBJ_Player.y
+			y = OBJ_Player.GroundY
 		}
 		
 		
 		break;
 		
 	}
+	
+	if (isCounter == true){ 
+		isCounter = false;
+		sprite_index = SPR_PorkSpecial1ATK2;
+		image_index = 0;
+		unblockEffects();
+        MyAttack = instance_create_layer(x,y,"Instances",ATK_PorkSpecial1);
+		with (MyAttack)
+		{
+		    image_xscale = other.image_xscale;
+			image_yscale = other.image_yscale;
+		    image_speed = other.image_speed;	
+			OwnerID = other.id;
+		    Owner = "Enemy"; 
+			depth = depth;
+		}
+		
+	} 
 	
 	if (curRoom == r_pork and sprite_index == SPR_PorkRun and (sprite_is_on_frame(2) || sprite_is_on_frame(5) ) )
 	{
