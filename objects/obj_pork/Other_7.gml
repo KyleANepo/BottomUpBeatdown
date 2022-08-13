@@ -11,16 +11,16 @@ if(isString == 0)
 
 if(State == "Intro")
 {
-	sprite_index = SPR_BusterIdle;
+	sprite_index = SPR_PorkIdle	;
 }
 
 //for attack strings
-if(sprite_index == SPR_BusterString2ATK1)
+if(sprite_index == SPR_PorkString1ATK1)
 {
-	sprite_index = SPR_BusterString2ATK2;
+	sprite_index = SPR_PorkString1ATK2;
 	image_index = 0;
-	x += 70 * face;
-    MyAttack = instance_create_layer(x,y,"Instances",ATK_BusterString2ATK2);
+	//x += 70 * face;
+    MyAttack = instance_create_layer(x,y,"Instances",ATK_PorkString1ATK2);
 	with (MyAttack)
 	{
 		image_xscale = other.image_xscale;
@@ -32,18 +32,28 @@ if(sprite_index == SPR_BusterString2ATK1)
 	}
 }
 
-//for special 1
-if(sprite_index == SPR_BusterSpecial1Transform)
+if(sprite_index == SPR_PorkString2ATK2)
 {
-	sprite_index = SPR_BusterSpecial1Attack;
+	sprite_index = SPR_PorkString2ATK3;
 	image_index = 0;
-	
-	//spawns him on either side of the battlefield depending on which way he's facing
-	if (face == -1) x = 1270
-	else if (face == 1) x = 10
-	
-	instance_create_depth(x + face*40, y-80, depth - 10, OBJ_UnblockableEffect);
-    MyAttack = instance_create_layer(x,y,"Instances",ATK_BusterSpecial1);
+    MyAttack = instance_create_layer(x,y,"Instances",ATK_PorkString2ATK3);
+	with (MyAttack)
+	{
+		image_xscale = other.image_xscale;
+		image_yscale = other.image_yscale;
+		image_speed = other.image_speed;	
+		OwnerID = other.id;
+		Owner = "Enemy"; 
+		depth = depth;
+	}
+}
+
+if(sprite_index == SPR_PorkString2ATK1)
+{
+	sprite_index = SPR_PorkString2ATK2;
+	image_index = 0;
+	x += 70 * face;
+    MyAttack = instance_create_layer(x,y,"Instances",ATK_PorkString2ATK2);
 	with (MyAttack)
 	{
 		image_xscale = other.image_xscale;

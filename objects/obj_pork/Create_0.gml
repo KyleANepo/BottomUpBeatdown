@@ -1,11 +1,13 @@
 //Enemy
 
-Speed = 6;
+curRoom = room
+
+Speed = 8;
 SpeedMod = 1;
 
 Knockback = 0;
 
-MaxHP = 1500;
+MaxHP = 3000;
 CurrentHP = MaxHP;
 
 OnGround = true;

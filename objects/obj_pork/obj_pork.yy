@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "SPR_BusterString3",
-    "path": "sprites/SPR_BusterString3/SPR_BusterString3.yy",
+    "name": "SPR_PorkSpecial1ATK1",
+    "path": "sprites/SPR_PorkSpecial1ATK1/SPR_PorkSpecial1ATK1.yy",
   },
   "solid": false,
   "visible": true,

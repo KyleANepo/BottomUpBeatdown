@@ -49,35 +49,26 @@ if (CurrentHP > 0) {
 		
 	case "BDash":
 		event_user(3);
-		x -= face*10;
-		
+		x -= face*12;
 		break;
 		
 	case "Attacking": //any special movement cases
-		if (sprite_index == SPR_BusterString1 && (image_index > 3 && image_index < 20)) x += face*2;
-		
-		if (sprite_index  == SPR_BusterSpecial1Attack && image_index == 3) {
-			audio_stop_sound(SND_BusterEngine); 
-			audio_play_sound(SND_BusterTireScreech, 10, false)
-			y = OBJ_Player.GroundY
-			}
-		
-		if (sprite_index == SPR_BusterSpecial1Attack && (image_index > 3 && image_index <= 6)) x += face*60;
-		else if (sprite_index == SPR_BusterSpecial1Attack && image_index == 7) Knockback = -face*30 
-		
+		if (sprite_index == SPR_PorkString3 && (image_index > 5 && image_index < 15)) x += face*3;
+		if (sprite_index == SPR_PorkSpecial3 && (image_index > 1 && image_index < 11)) x += face*1;
+		if (sprite_index == SPR_PorkSpecial3 && sprite_is_on_frame(15))
+		{
+			x = OBJ_Player.x - sign(face)*100
+			y = OBJ_Player.y
+		}
 		
 		
 		break;
 		
 	}
 	
-	//change speed depending on if minions exists
-	if (instance_exists(OBJ_BusterMinion))
-	{ Speed = 1 }
-	else if (CurrentHP > 500)
-	{ Speed = 6}
-	else
-	{ Speed = 8
+	if (curRoom == r_pork and sprite_index == SPR_PorkRun and (sprite_is_on_frame(2) || sprite_is_on_frame(5) ) )
+	{
+		instance_create_depth(x, y, depth, OBJ_WaterEffect);
 	}
 	
 	//Knockback

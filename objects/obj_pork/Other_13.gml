@@ -1,7 +1,7 @@
 switch(State){
  
     case "Idle":
-        sprite_index = SPR_BusterIdle;
+        sprite_index = SPR_PorkIdle;
         break;
          
     case "PositionFront":
@@ -13,18 +13,18 @@ switch(State){
 	    }
 		
 	    if(speed != 0){
-	        sprite_index = SPR_BusterWalk;
+	        sprite_index = SPR_PorkRun;
 	    }else{
-	        sprite_index = SPR_BusterIdle;
+	        sprite_index = SPR_PorkIdle;
 	    }
 	    break;
 		
 	case "Hit":
-	    sprite_index = SPR_BusterHit;
+	    sprite_index = SPR_PorkHit;
 	    break;
 		
 	case "Guard":
-		sprite_index = SPR_BusterGuard;
+		sprite_index = SPR_PorkGuard;
 		break;
 		
 	case "BDash":

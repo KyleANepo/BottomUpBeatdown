@@ -12,3 +12,4 @@ if(CurrentHP > 0 && State != "Intro"){
     draw_rectangle_colour(276,20,(980*(CurrentHP/MaxHP))+276,40,c_red,c_orange,c_orange,c_red,false);
  
 }
+
