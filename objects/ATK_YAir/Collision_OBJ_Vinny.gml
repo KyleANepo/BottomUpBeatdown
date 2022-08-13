@@ -72,7 +72,6 @@ if(image_index >= DMGFrame && hit < 1 && abs(OBJ_Player.GroundY - other.GroundY)
 			{
 				other.guardPoint = 3;
 				other.isCounter = true;
-				other.sprite_index = SPR_VinnyCounter
 			}
 	}
 }

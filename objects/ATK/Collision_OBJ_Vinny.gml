@@ -26,7 +26,7 @@ if(sprite_is_on_frame(DMGFrame) && abs(depth - other.depth) <= LayerSize && Owne
 			
 			if (other.alarm[1] == -1) //if first hit in a combo, allow for followups until alloted time. then guard.
 			{
-				other.alarm[1] = 80;
+				other.alarm[1] = 60;
 			}
 			
 			
@@ -88,7 +88,6 @@ if(sprite_is_on_frame(DMGFrame) && abs(depth - other.depth) <= LayerSize && Owne
 		{
 			other.guardPoint = 3;
 			other.isCounter = true;
-			other.sprite_index = SPR_VinnyCounter
 		}
 	}
 }

@@ -16,6 +16,6 @@ if(IsHit == false && CurrentHP > 0){
 	}
 }
 
-if(MyAttack != 0){
+if(MyAttack != 0 && OnGround == false){
     IsAttackingAir = true;
 } 
