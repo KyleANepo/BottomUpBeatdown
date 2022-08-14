@@ -29,7 +29,7 @@ if(IsHit == false && CurrentHP > 0 && OnGround == true && IsAttacking == false &
 		audio_play_sound(SND_Dodge,10,false)
 		sprite_index = SPR_SteaksDodge;
 		image_index = 0;
-		Knockback -= 20*sign(image_xscale);
+		Knockback -= 22*sign(image_xscale);
 	}
 }
 

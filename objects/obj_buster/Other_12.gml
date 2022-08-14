@@ -8,7 +8,7 @@ if(OBJ_Player.CurrentHP > 0){
 	State = "Attacking";
 	isArmored = true;
 	
-	if(Mortal > 0)
+	if (Mortal > 0)
 	{
 		instance_create_depth(other.x, other.y-130, other.depth - 10, OBJ_DeadlyAttack);
 		sprite_index = SPR_BusterSpecial1Transform;

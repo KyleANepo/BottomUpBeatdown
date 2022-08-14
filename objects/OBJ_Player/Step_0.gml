@@ -11,6 +11,8 @@ if (OnGround == true) {
 CurrentHP = clamp(CurrentHP, 0, MaxHP);
 
 
+
+
 //if alive
 if (intro == 1) {
 	

@@ -1,8 +1,8 @@
 event_inherited();
 Owner = "Enemy";
-Damage = 40;
+Damage = 30;
 StunLength = 30;
-DMGFrame = 4;
+DMGFrame = 5;
 Knockback = 16;
 isHeavy = true;
 isUnblock = true;

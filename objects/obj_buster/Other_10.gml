@@ -11,15 +11,15 @@ switch(State){
         break;
 	
 	case "Hit": //check if health is brought down a chunk, makes next attack a mortal wound
-		if(CurrentHP <= 1000 && hasPassed1 == false) {
+		if(CurrentHP <= MaxHP*(3/4) && hasPassed1 == false) {
 			Mortal = 1 
 			hasPassed1 = true
 		}
-		if(CurrentHP <= 750 && hasPassed2 == false) {
+		if(CurrentHP <= MaxHP*(2/4) && hasPassed2 == false) {
 			Summon = 1
 			hasPassed2 = true
 		}
-		if(CurrentHP <= 500 && hasPassed3 == false) {
+		if(CurrentHP <= MaxHP*(1/4) && hasPassed3 == false) {
 			Mortal = 1 
 			hasPassed3 = true
 		}

@@ -21,7 +21,8 @@ switch (room) {
 	
 	case r_pork:
 		audio_stop_all()
-		audio_play_sound(SND_PorkMusic, 10, true)
+		audio_play_sound(SND_BattleBegin, 10, false)
+		sprite_index = SPR_TitlePork;
 		break;
 		
 	

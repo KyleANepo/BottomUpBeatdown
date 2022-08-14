@@ -29,7 +29,6 @@ isString = 0; //if move is start of a string
 isArmored = false; //if move is armored
 isCounter = false;
 isRanged = false; //if moves should be ranged/projectiled
-isInvincible = false;
 guardPoint = 3;
 
 Mortal = 0;
