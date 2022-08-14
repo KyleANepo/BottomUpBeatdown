@@ -10,6 +10,7 @@ draw_set_alpha(1);
 draw_self();
 
 
+
 if (flashAlpha > 0) {
 	shader_set(sh_FlashRed);
 	

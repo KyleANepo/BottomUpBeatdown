@@ -12,6 +12,7 @@ CurrentHP = clamp(CurrentHP, 0, MaxHP);
 
 
 
+get_input();
 
 //if alive
 if (intro == 1) {
@@ -54,6 +55,105 @@ else if(CurrentHP > 0 && intro == 0){
 		IsDodging = false;
 	}
 	
+	
+	//Dodging
+	if(IsHit == false && CurrentHP > 0 && OnGround == true && IsAttacking == false && IsParrying == false && IsGuarding == false && sprite_index != SPR_SteaksDodge){
+		if (input_dodge_pressed){
+			IsDodging = true;
+			audio_play_sound(SND_Dodge,10,false)
+			sprite_index = SPR_SteaksDodge;
+			image_index = 0;
+			Knockback -= 22*sign(image_xscale);
+		}
+	}
+	
+	//Blocking
+	if(IsHit == false && CurrentHP > 0 && OnGround == true && IsAttacking == false && IsParrying == false){
+		if (input_guard_pressed){
+			sprite_index = SPR_SteaksParry;
+			image_index = 0;
+			IsParrying = true;
+			IsGuarding = true;
+			SpeedMod = 0;
+		}
+	}
+	
+	if (input_guard_released){
+		IsGuarding = false;
+		SpeedMod = 1;
+	}
+
+	
+	//Attacking
+	
+	AttackType = "";
+	ButtonCombo = "";
+ 
+	if(input_light_pressed){
+		ButtonCombo += "+LAtk";
+	}
+
+	if(input_heavy_pressed){
+	    ButtonCombo += "+SAtk";
+	}
+	
+	
+	if (input_light_pressed or input_heavy_pressed) {
+		ds_list_add(CommandList, string_delete(ButtonCombo,1,1));
+		alarm[0] = 20;
+
+		while(ds_list_size(CommandList) > 4){
+		    ds_list_delete(CommandList, 0);
+		}
+	
+		//XXXY
+		//XXY
+		//XY
+		//XXX
+		//XX
+		//X
+		//Y
+
+		ButtonCombo = string_delete(ButtonCombo,1,1);
+		
+		if(ds_list_find_value(CommandList,ds_list_size(CommandList)-1) == "SAtk" && ds_list_find_value(CommandList,ds_list_size(CommandList)-2) == "LAtk" && ds_list_find_value(CommandList,ds_list_size(CommandList)-3) == "LAtk" && ds_list_find_value(CommandList,ds_list_size(CommandList)-4) == "LAtk"){
+	    AttackType = "XXXY";
+		ds_list_clear(CommandList);
+		} else if(ds_list_find_value(CommandList,ds_list_size(CommandList)-1) == "SAtk" && ds_list_find_value(CommandList,ds_list_size(CommandList)-2) == "LAtk" && ds_list_find_value(CommandList,ds_list_size(CommandList)-3) == "LAtk"){
+		    AttackType = "XXY";
+			ds_list_clear(CommandList);
+		} else if(ds_list_find_value(CommandList,ds_list_size(CommandList)-1) == "SAtk" && ds_list_find_value(CommandList,ds_list_size(CommandList)-2) == "LAtk"){
+		    AttackType = "XY";
+			ds_list_clear(CommandList);
+		}else if(ds_list_find_value(CommandList,ds_list_size(CommandList)-1) == "LAtk" && ds_list_find_value(CommandList,ds_list_size(CommandList)-2) == "LAtk" && ds_list_find_value(CommandList,ds_list_size(CommandList)-3) == "LAtk" && ds_list_find_value(CommandList,ds_list_size(CommandList)-4) == "LAtk"){
+		    ds_list_clear(CommandList);
+		}else if(ds_list_find_value(CommandList,ds_list_size(CommandList)-1) == "LAtk" && ds_list_find_value(CommandList,ds_list_size(CommandList)-2) == "LAtk" && ds_list_find_value(CommandList,ds_list_size(CommandList)-3) == "LAtk"){
+		    AttackType = "XXX";
+		}else if(ds_list_find_value(CommandList,ds_list_size(CommandList)-1) == "LAtk" && ds_list_find_value(CommandList,ds_list_size(CommandList)-2) == "LAtk"){
+		    AttackType = "XX";
+		}else if(ds_list_find_value(CommandList,ds_list_size(CommandList)-1) == "LAtk"){
+		    AttackType = "X";
+		}else if(ds_list_find_value(CommandList,ds_list_size(CommandList)-1) == "SAtk"){
+		    AttackType = "Y";
+		}else if(ButtonCombo == "LAtk+SAtk"){
+		    AttackType = "Super1";
+		}
+
+		if(OnGround == true && IsGuarding == false && IsParrying == false){
+		    event_user(2);
+		}
+
+		if(OnGround == false && IsHit == false)
+		{
+			event_user(3);
+		}
+		
+	}
+
+	
+	
+	
+	
 	//Movement
 	if(IsAttacking == false && IsHit = false && IsParrying == false && IsGuarding == false && sprite_index != SPR_SteaksDodge){     
 	    //If the player is on the ground move them with XSpeed and YSpeed, otherwise ignore YSpeed
@@ -86,7 +186,7 @@ else if(CurrentHP > 0 && intro == 0){
 		} 
 	
 		//Jumping
-		if ((keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("M"))) && OnGround == true){
+		if ((input_jump_pressed) && OnGround == true){
 			OnGround = false;	
 			IsJumping = true;
 		

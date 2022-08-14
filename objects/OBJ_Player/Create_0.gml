@@ -31,6 +31,9 @@ flashAlpha = 0;
 flashColor = c_blue;
 
 Knockback = 0;
+	
+AttackType = "";
+ButtonCombo = "";
 
 OnGround = true;
 GroundY = y;
