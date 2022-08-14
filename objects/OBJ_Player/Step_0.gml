@@ -21,18 +21,18 @@ if (intro == 1) {
 else if(CurrentHP > 0 && intro == 0){
 	//left or right
 	XSpeed = 0;
-	if(keyboard_check(ord("A"))){
+	if(input_left_check){
 		XSpeed = -1*Speed;
-	}else if(keyboard_check(ord("D"))){
+	}else if(input_right_check){
 		XSpeed = Speed;
 	}
 	
 	//Checks if either the W or S buttons are pressed to make the player move Up or Down.
 	YSpeed = 0;
 	if(OnGround == true){
-	    if(keyboard_check(ord("W"))){
+	    if(input_up_check){
 	        YSpeed = -1*Speed/2;
-	    }else if(keyboard_check(ord("S"))){
+	    }else if(input_down_check){
 	        YSpeed = Speed/2;
 	    }
 	}

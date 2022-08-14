@@ -1,7 +1,9 @@
 //get input
-var _up = keyboard_check_pressed(vk_up);
-var _down = keyboard_check_pressed(vk_down);
-select = keyboard_check_pressed(vk_space);
+get_input();
+
+var _up = input_up_pressed;
+var _down = input_down_pressed;
+select = input_jump_pressed or input_dodge_pressed;
 
 
 var _move = _down - _up;
