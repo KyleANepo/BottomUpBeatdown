@@ -36,4 +36,8 @@ function get_input(){
 	input_guard_check = keyboard_check(ord("L")) or keyboard_check(vk_right) or gamepad_button_check(0,gp_shoulderr)
 	input_guard_pressed = keyboard_check_pressed(ord("L")) or keyboard_check_pressed(vk_right) or gamepad_button_check_pressed(0,gp_shoulderr)
 	input_guard_released = keyboard_check_released(ord("L")) or keyboard_check_released(vk_right) or gamepad_button_check_released(0,gp_shoulderr)
+	
+	input_start_check = keyboard_check(vk_enter) or gamepad_button_check(0,gp_start)
+	input_start_pressed = keyboard_check_pressed(vk_enter) or gamepad_button_check_pressed(0,gp_start)
+	input_start_released = keyboard_check_released(vk_enter) or gamepad_button_check_released(0,gp_start)
 }
