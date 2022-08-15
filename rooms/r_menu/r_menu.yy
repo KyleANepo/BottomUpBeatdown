@@ -14,7 +14,6 @@
   ],
   "layers": [
     {"instances":[
-        {"properties":[],"isDnd":false,"objectId":{"name":"OBJ_Music","path":"objects/OBJ_Music/OBJ_Music.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":0.0,"resourceVersion":"1.0","name":"inst_72AEF416","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"OBJ_Menu","path":"objects/OBJ_Menu/OBJ_Menu.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":640.0,"y":288.0,"resourceVersion":"1.0","name":"inst_6FA78B25","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"OBJ_Controls","path":"objects/OBJ_Controls/OBJ_Controls.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2.0,"y":718.0,"resourceVersion":"1.0","name":"inst_984B3D6","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"OBJ_Symbols","path":"objects/OBJ_Symbols/OBJ_Symbols.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1072.0,"y":603.0,"resourceVersion":"1.0","name":"inst_6A860354","tags":[],"resourceType":"GMRInstance",},
@@ -28,7 +27,6 @@
   "inheritCode": false,
   "instanceCreationOrder": [
     {"name":"inst_6FA78B25","path":"rooms/r_menu/r_menu.yy",},
-    {"name":"inst_72AEF416","path":"rooms/r_menu/r_menu.yy",},
     {"name":"inst_984B3D6","path":"rooms/r_menu/r_menu.yy",},
     {"name":"inst_6A860354","path":"rooms/r_menu/r_menu.yy",},
     {"name":"inst_70C1F328","path":"rooms/r_menu/r_menu.yy",},

@@ -1,0 +1,1 @@
+fadetoroom(r_menu, 10, c_white);

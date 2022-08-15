@@ -7,7 +7,7 @@ global.dsm_settings = ds_map_create();
 
 ds_map_add(set, "sound", [5, [0, 10]]);
 ds_map_add(set, "music", [5, [0, 10]]);
-ds_map_add(set, "difficulty", [1, ["Easy", "Normal", "Hard"]]);
+ds_map_add(set, "difficulty", [global.difficulty, ["Easy", "Normal", "Hard"]]);
 
 time_held_right = 0;
 time_held_left = 0;

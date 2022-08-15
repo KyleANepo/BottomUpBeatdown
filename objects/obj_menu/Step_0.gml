@@ -97,6 +97,7 @@ if select or (is_array(menu[sub_menu][index]) and (_hmove != 0)) {
 				case 2:
 					//Difficulty
 					change_menu(_hmove, "difficulty");
+					global.difficulty = global.dsm_settings[? "difficulty"][0];
 				break;
 				case 3:
 					sub_menu = MAIN;
