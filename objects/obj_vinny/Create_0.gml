@@ -5,7 +5,10 @@ SpeedMod = 1;
 
 Knockback = 0;
 
-MaxHP = 2000;
+//difficulty settings
+difficultyMod()
+
+MaxHP = 1500 * HealthMod;
 CurrentHP = MaxHP;
 
 OnGround = true;

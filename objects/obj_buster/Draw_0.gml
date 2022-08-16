@@ -19,3 +19,5 @@ if (flashAlpha > 0) {
 	
 	shader_reset();
 }
+
+draw_text(x,y,Aggressiveness)

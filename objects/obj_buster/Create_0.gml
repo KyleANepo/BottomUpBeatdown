@@ -5,7 +5,10 @@ SpeedMod = 1;
 
 Knockback = 0;
 
-MaxHP = 1500;
+//difficulty settings
+difficultyMod()
+
+MaxHP = 1500 * HealthMod;
 CurrentHP = MaxHP;
 
 OnGround = true;
@@ -41,6 +44,9 @@ Minion2 = 0;
 //aggro range
 Aggressiveness = 0;
 AttackRange = sprite_width/2+OBJ_Player.sprite_width/2;
+
+
+
 
 TargetX = x;
 TargetY = y;
