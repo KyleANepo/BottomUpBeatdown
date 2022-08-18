@@ -9,8 +9,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "NPC",
-    "path": "objects/NPC/NPC.yy",
+    "name": "OBJ_Eelie",
+    "path": "objects/OBJ_Eelie/OBJ_Eelie.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,

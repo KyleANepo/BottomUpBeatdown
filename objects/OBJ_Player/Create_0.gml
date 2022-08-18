@@ -18,8 +18,11 @@ IsParrying = false; //detects if in parry state
 IsSlip = false;
 IsDodging = false;
 IsGuarding = false; //negates damage, stops movement
-AttackType = 0; //id of attack
+
+AttackType = 0; //id of attack	
 Cancel = false;
+
+bloodLust = false;
 
 alarm[9] = room_speed * 3;
 intro = 1;

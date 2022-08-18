@@ -11,7 +11,7 @@ if(sprite_index == SPR_SteaksParry){
 	IsParrying = false;
 }
 
-if(sprite_index == SPR_SteaksTaunt1){
+if(sprite_index == SPR_SteaksTaunt1 or sprite_index == SPR_SteaksTaunt2 or sprite_index == SPR_SteaksBloodlust){
 	sprite_index = SPR_SteaksIdle;
 }
 

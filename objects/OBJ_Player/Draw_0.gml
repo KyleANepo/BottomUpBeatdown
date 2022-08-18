@@ -10,7 +10,6 @@ draw_set_alpha(1);
 draw_self();
 
 
-
 if (flashAlpha > 0) {
 	shader_set(sh_FlashRed);
 	
@@ -41,3 +40,4 @@ if (room == r_pork)
 	//Reset blendmode
 	gpu_set_blendmode(bm_normal);
 }
+

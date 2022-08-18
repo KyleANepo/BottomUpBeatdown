@@ -8,8 +8,11 @@ if(sprite_is_on_frame(DMGFrame) && abs(depth - other.depth) <= LayerSize && Owne
 		    other.State = "Hit";
 		    other.alarm[0] = StunLength;
 			
-			OBJ_Player.SuperMeter += 1;
-	
+			if (OBJ_Player.bloodLust != true)
+			{
+				OBJ_Player.SuperMeter += 1;
+			}
+			
 			//Hit effects
 			if (isHeavy == false) { 
 				lightatkeffects()
@@ -32,7 +35,7 @@ if(sprite_is_on_frame(DMGFrame) && abs(depth - other.depth) <= LayerSize && Owne
 			
 		} else 
 		{ //is armorerd
-			if (isUnblock == true && other.sprite_index != SPR_BusterSpecial1Transform) //if guardbreaker move
+			if ((isUnblock == true or OBJ_Player.bloodLust) && other.sprite_index != SPR_BusterSpecial1Transform) //if guardbreaker move
 			{
 				other.isArmored = false
 				

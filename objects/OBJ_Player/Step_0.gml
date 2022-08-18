@@ -57,7 +57,7 @@ else if(CurrentHP > 0 && intro == 0){
 	
 	
 	//Dodging
-	if(IsHit == false && CurrentHP > 0 && OnGround == true && IsAttacking == false && IsParrying == false && IsGuarding == false && sprite_index != SPR_SteaksDodge){
+	if(IsHit == false && OnGround == true && IsParrying == false && IsGuarding == false && sprite_index != SPR_SteaksDodge && sprite_index != SPR_SteaksBloodlust && sprite_index != SPR_SteaksTaunt2 && ((bloodLust == false && IsAttacking == false) || (bloodLust == true)) ){
 		if (input_dodge_pressed){
 			IsDodging = true;
 			audio_play_sound(SND_Dodge,10,false)
@@ -68,7 +68,7 @@ else if(CurrentHP > 0 && intro == 0){
 	}
 	
 	//Blocking
-	if(IsHit == false && CurrentHP > 0 && OnGround == true && IsAttacking == false && IsParrying == false){
+	if(IsHit == false && CurrentHP > 0 && OnGround == true && IsAttacking == false && IsParrying == false && sprite_index != SPR_SteaksBloodlust && sprite_index != SPR_SteaksTaunt2){
 		if (input_guard_pressed){
 			sprite_index = SPR_SteaksParry;
 			image_index = 0;
@@ -139,23 +139,59 @@ else if(CurrentHP > 0 && intro == 0){
 		    AttackType = "Super1";
 		}
 
-		if(OnGround == true && IsGuarding == false && IsParrying == false){
+		if(OnGround == true && IsGuarding == false && IsParrying == false && sprite_index != SPR_SteaksBloodlust && sprite_index != SPR_SteaksTaunt2){
 		    event_user(2);
 		}
 
-		if(OnGround == false && IsHit == false)
+		if(OnGround == false && IsHit == false && sprite_index != SPR_SteaksTaunt2)
 		{
 			event_user(3);
 		}
 		
 	}
 
+	//bloodlust
+	if(SuperMeter >= 20)
+	{	
+		if(input_bl_pressed && bloodLust == false && IsGuarding == false && IsParrying == false && IsHit = false)
+		{
+			bloodLust = true;
+			flashColor = c_white;
+			flashAlpha = 1;
+			global.shake = true;
+			audio_play_sound(SND_UnblockableSnd, 10, false);
+			instance_create_depth(x, y-130, depth - 10, OBJ_UnblockableEffect);
+			sprite_index = SPR_SteaksBloodlust;
+			image_index = 0;
+		}
+	}
 	
+	if(bloodLust && SuperMeter > 0)
+	{
+		Speed = 7;
+		image_speed = 1.5;
+		SuperMeter -= .07
+	} else
+	{
+		bloodLust = false;
+		Speed = 5.5;
+		image_speed = 1;
+	}
 	
+	//taunting
+	if (input_taunt_pressed && IsAttacking == false && IsHit = false && IsParrying == false && IsGuarding == false && sprite_index != SPR_SteaksDodge && sprite_index != SPR_SteaksBloodlust)
+	{
+		sprite_index = SPR_SteaksTaunt2;
+		image_index = 0;
+	}
 	
+	if (sprite_index == SPR_SteaksTaunt2 and sprite_is_on_frame(8))
+	{
+		SuperMeter += 3;
+	}
 	
 	//Movement
-	if(IsAttacking == false && IsHit = false && IsParrying == false && IsGuarding == false && sprite_index != SPR_SteaksDodge){     
+	if(IsAttacking == false && IsHit = false && IsParrying == false && IsGuarding == false && sprite_index != SPR_SteaksDodge && sprite_index != SPR_SteaksBloodlust && sprite_index != SPR_SteaksTaunt2){     
 	    //If the player is on the ground move them with XSpeed and YSpeed, otherwise ignore YSpeed
 	    if(OnGround == true){
 			if(XSpeed != 0 && YSpeed != 0){

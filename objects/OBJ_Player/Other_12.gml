@@ -92,7 +92,7 @@ if(IsHit == false && CurrentHP > 0 ){
 		    Owner = "Player"; 
 		}
 	}
-	else if(AttackType == "Super1" && IsAttacking == true && SuperMeter >= 20 && sprite_index != SPR_SteaksPunchSuper1){
+	else if(AttackType == "Super1" && IsAttacking == true && (SuperMeter >= 20 || bloodLust == true) && sprite_index != SPR_SteaksPunchSuper1){
 		SuperMeter -= 20;
 		superATKEffects()
 	    sprite_index = SPR_SteaksPunchSuper2;
@@ -107,7 +107,7 @@ if(IsHit == false && CurrentHP > 0 ){
 		    Owner = "Player"; 
 		}
 	}
-	else if(AttackType == "Super1" && IsAttacking == false && SuperMeter >= 20){
+	else if(AttackType == "Super1" && IsAttacking == false && (SuperMeter >= 20 || bloodLust == true)){
 		SuperMeter -= 20;
 		superATKEffects()
 	    sprite_index = SPR_SteaksPunchSuper1;

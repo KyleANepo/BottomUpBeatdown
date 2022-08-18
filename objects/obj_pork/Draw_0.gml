@@ -40,6 +40,4 @@ if (room == r_pork)
 	}
 	//Reset blendmode
 	gpu_set_blendmode(bm_normal);
-}
-
-draw_text(x,y,CurrentHP)
+} 

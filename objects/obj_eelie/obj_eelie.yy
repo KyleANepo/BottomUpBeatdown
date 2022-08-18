@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "SPR_Eelie",
+    "path": "sprites/SPR_Eelie/SPR_Eelie.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,
@@ -28,7 +31,7 @@
     "path": "folders/Objects/NPCS.yy",
   },
   "resourceVersion": "1.0",
-  "name": "NPC",
+  "name": "OBJ_Eelie",
   "tags": [],
   "resourceType": "GMObject",
 }

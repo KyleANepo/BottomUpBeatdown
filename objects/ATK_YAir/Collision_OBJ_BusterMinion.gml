@@ -8,7 +8,9 @@ if(image_index >= DMGFrame && hit < 1 && abs(OBJ_Player.GroundY - other.GroundY)
 		    other.State = "Hit";
 		    other.alarm[0] = StunLength;
 			
-			OBJ_Player.SuperMeter += 1;
+			if (OBJ_Player.bloodLust != false) {
+				OBJ_Player.SuperMeter += 1;
+			}
 			
 			//Hit effects
 			if (isHeavy == false) { 
