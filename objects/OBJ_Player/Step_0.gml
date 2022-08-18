@@ -97,8 +97,12 @@ else if(CurrentHP > 0 && intro == 0){
 	    ButtonCombo += "+SAtk";
 	}
 	
+	if(input_bl_pressed){
+		ButtonCombo += "+LAtk+SAtk";
+	}
 	
-	if (input_light_pressed or input_heavy_pressed) {
+	
+	if (input_light_pressed or input_heavy_pressed or (input_bl_pressed and bloodLust)) {
 		ds_list_add(CommandList, string_delete(ButtonCombo,1,1));
 		alarm[0] = 20;
 
@@ -179,7 +183,7 @@ else if(CurrentHP > 0 && intro == 0){
 	}
 	
 	//taunting
-	if (input_taunt_pressed && IsAttacking == false && IsHit = false && IsParrying == false && IsGuarding == false && sprite_index != SPR_SteaksDodge && sprite_index != SPR_SteaksBloodlust)
+	if (input_taunt_pressed && IsAttacking == false && IsHit = false && IsParrying == false && IsGuarding == false && sprite_index != SPR_SteaksDodge && sprite_index != SPR_SteaksBloodlust && sprite_index != SPR_SteaksTaunt2)
 	{
 		sprite_index = SPR_SteaksTaunt2;
 		image_index = 0;
