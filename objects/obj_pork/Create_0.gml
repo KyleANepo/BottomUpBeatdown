@@ -34,12 +34,13 @@ isCounter = false;
 isRanged = false; //if moves should be ranged/projectiled
 guardPoint = 3;
 
+blOK = false;
 Mortal = 0;
 hasPassed1 = false;
 hasPassed2 = false;
 hasPassed3 = false;
 
-
+bloodLust = false;
 
 //aggro range
 Aggressiveness = 0;

@@ -66,6 +66,7 @@ if (CurrentHP > 0) {
 		
 	}
 	
+	//counter
 	if (isCounter == true){ 
 		isCounter = false;
 		sprite_index = SPR_PorkSpecial1ATK2;
@@ -84,6 +85,18 @@ if (CurrentHP > 0) {
 		
 	} 
 	
+	//bloodlust
+	if (bloodLust)
+	{
+		image_speed = 1.5
+		Speed = 11
+	} else
+	{
+		image_speed = 1
+		Speed = 9
+	}
+	
+	//water effect
 	if (curRoom == r_pork and sprite_index == SPR_PorkRun and (sprite_is_on_frame(2) || sprite_is_on_frame(5) ) )
 	{
 		instance_create_depth(x, y, depth, OBJ_WaterEffect);

@@ -11,7 +11,14 @@ if (sprite_index != SPR_PorkBDash && sprite_index != SPR_PorkSpecial3)
 draw_set_alpha(1);
 draw_self();
 
-
+//bloodlust
+if (bloodLust)
+{
+	// Draw Event
+	shader_set(sh_bloodLust);
+	draw_self();
+	shader_reset();	
+}
 
 
 if (flashAlpha > 0) {

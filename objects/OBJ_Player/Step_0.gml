@@ -68,19 +68,17 @@ else if(CurrentHP > 0 && intro == 0){
 	}
 	
 	//Blocking
-	if(IsHit == false && CurrentHP > 0 && OnGround == true && IsAttacking == false && IsParrying == false && sprite_index != SPR_SteaksBloodlust && sprite_index != SPR_SteaksTaunt2){
+	if(IsHit == false && CurrentHP > 0 && OnGround == true && IsAttacking == false && sprite_index != SPR_SteaksParry && sprite_index != SPR_SteaksBloodlust && sprite_index != SPR_SteaksTaunt2){
 		if (input_guard_pressed){
 			sprite_index = SPR_SteaksParry;
 			image_index = 0;
 			IsParrying = true;
 			IsGuarding = true;
-			SpeedMod = 0;
 		}
 	}
 	
-	if (input_guard_released){
+	if (!input_guard_check){
 		IsGuarding = false;
-		SpeedMod = 1;
 	}
 
 	
@@ -160,11 +158,7 @@ else if(CurrentHP > 0 && intro == 0){
 		if(input_bl_pressed && bloodLust == false && IsGuarding == false && IsParrying == false && IsHit = false)
 		{
 			bloodLust = true;
-			flashColor = c_white;
-			flashAlpha = 1;
-			global.shake = true;
-			audio_play_sound(SND_UnblockableSnd, 10, false);
-			instance_create_depth(x, y-130, depth - 10, OBJ_UnblockableEffect);
+			bloodLustEffects()
 			sprite_index = SPR_SteaksBloodlust;
 			image_index = 0;
 		}

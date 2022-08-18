@@ -9,6 +9,14 @@ draw_ellipse(x-40,GroundY-8,x+40,GroundY+8,false);
 draw_set_alpha(1);
 draw_self();
 
+if (bloodLust)
+{
+	// Draw Event
+	shader_set(sh_bloodLust);
+	draw_self();
+	shader_reset();	
+}
+
 
 if (flashAlpha > 0) {
 	shader_set(sh_FlashRed);

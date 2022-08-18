@@ -24,6 +24,14 @@ if(OBJ_Player.CurrentHP > 0){
 			depth = depth;
 		}
 		Mortal = 0;
+	} else if (blOK) 
+	{ 
+		blOK = false;
+		bloodLust = true;
+		sprite_index = SPR_PorkBloodlust;
+		image_index = 0;
+		alarm[3] = room_speed * 8;
+		bloodLustEffects();
 	} else if(AttackChance>= 80)
 	{
  
