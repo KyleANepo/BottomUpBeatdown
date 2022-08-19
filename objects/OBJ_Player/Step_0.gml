@@ -264,8 +264,8 @@ else if(CurrentHP > 0 && intro == 0){
 	
 	
 }else{
-	
-	fadetoroom(r_menu, 50, c_white);
+	sprite_index = SPR_SteaksHit
+	fadetoroom(r_menu, 30, c_red);
 	//if hp 0, kill
 }
 
