@@ -116,7 +116,7 @@ if (CurrentHP > 0) {
 } else
 {
 	State = "Hit"
-	fadetoroom(r_menu, 50, c_white);
+	fadetoroom(r_vinnywin, 40, c_white);
 }
 
 if(OnGround == true){

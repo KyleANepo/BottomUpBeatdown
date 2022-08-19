@@ -24,6 +24,23 @@ switch (room) {
 		audio_play_sound(SND_BattleBegin, 10, false)
 		sprite_index = SPR_TitlePork;
 		break;
+	
+	case r_busterwin:
+		audio_stop_all()
+		audio_play_sound(SND_WinMusic, 10, false)
+		sprite_index = SPR_Win;
+		break;
 		
+	case r_vinnywin:
+		audio_stop_all()
+		audio_play_sound(SND_WinMusic, 10, false)
+		sprite_index = SPR_Win;
+		break;
+		
+	case r_porkwin:
+		audio_stop_all()
+		audio_play_sound(SND_WinMusic, 10, false)
+		sprite_index = SPR_Win;
+		break;
 	
 }

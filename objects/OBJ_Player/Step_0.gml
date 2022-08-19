@@ -192,11 +192,9 @@ else if(CurrentHP > 0 && intro == 0){
 	if (input_assist_pressed && assist > 0)
 	{
 		assist -= 1;
-		MyAssist = instance_create_layer(10,10,"Effects",OBJ_AssistPizzaman)
+		MyAssist = instance_create_layer(10,40,"Effects",OBJ_AssistPizzaman)
 		with (MyAssist)
 		{
-		    image_xscale = other.image_xscale;
-			image_yscale = other.image_yscale;
 			OwnerID = other.id;
 		    Owner = "Player"; 
 		}
