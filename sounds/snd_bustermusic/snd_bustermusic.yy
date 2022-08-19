@@ -1,7 +1,7 @@
 {
   "conversionMode": 0,
   "compression": 0,
-  "volume": 0.2,
+  "volume": 0.4,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_bustermusic.mp3",
-  "duration": 172.59392,
+  "duration": 159.888,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

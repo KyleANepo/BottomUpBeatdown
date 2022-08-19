@@ -1,7 +1,7 @@
 {
   "conversionMode": 0,
   "compression": 0,
-  "volume": 0.2,
+  "volume": 0.4,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 32000,
@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_porkmusic.mp3",
-  "duration": 322.08398,
+  "duration": 125.016,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

@@ -188,6 +188,20 @@ else if(CurrentHP > 0 && intro == 0){
 		SuperMeter += 3;
 	}
 	
+	//assists
+	if (input_assist_pressed && assist > 0)
+	{
+		assist -= 1;
+		MyAssist = instance_create_layer(10,10,"Effects",OBJ_AssistPizzaman)
+		with (MyAssist)
+		{
+		    image_xscale = other.image_xscale;
+			image_yscale = other.image_yscale;
+			OwnerID = other.id;
+		    Owner = "Player"; 
+		}
+	}
+	
 	//Movement
 	if(IsAttacking == false && IsHit = false && IsParrying == false && IsGuarding == false && sprite_index != SPR_SteaksDodge && sprite_index != SPR_SteaksBloodlust && sprite_index != SPR_SteaksTaunt2){     
 	    //If the player is on the ground move them with XSpeed and YSpeed, otherwise ignore YSpeed
@@ -252,6 +266,7 @@ else if(CurrentHP > 0 && intro == 0){
 	
 	
 }else{
+	
 	fadetoroom(r_menu, 50, c_white);
 	//if hp 0, kill
 }

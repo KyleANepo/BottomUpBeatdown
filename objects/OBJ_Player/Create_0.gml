@@ -23,6 +23,7 @@ AttackType = 0; //id of attack
 Cancel = false;
 
 bloodLust = false;
+assist = 1;
 
 alarm[9] = room_speed * 3;
 intro = 1;
