@@ -5,3 +5,5 @@ Features:
   -One playable character
   -Three fightable bosses
   -Combo system and supermoves
+
+https://itch.io/game/summary/1668755
