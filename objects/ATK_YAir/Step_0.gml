@@ -1,7 +1,7 @@
-x = OBJ_Player.x;
-y = OBJ_Player.y;
+x = OwnerID.x;
+y = OwnerID.y;
 
-if (OBJ_Player.IsHit == true || OBJ_Player.OnGround == true)
+if (OwnerID.IsHit == true || OwnerID.OnGround == true)
 {
 	instance_destroy();
 }

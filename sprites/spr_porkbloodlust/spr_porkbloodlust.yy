@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "SPR_PorkBloodlust",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,27 +27,17 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"b1eb0743-937c-4567-80ff-bf5ac301386a","path":"sprites/SPR_PorkBloodlust/SPR_PorkBloodlust.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b1eb0743-937c-4567-80ff-bf5ac301386a","path":"sprites/SPR_PorkBloodlust/SPR_PorkBloodlust.yy",},"LayerId":{"name":"614d8c13-ccf4-4ea6-b046-c15f2cfa2bf0","path":"sprites/SPR_PorkBloodlust/SPR_PorkBloodlust.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"SPR_PorkBloodlust","path":"sprites/SPR_PorkBloodlust/SPR_PorkBloodlust.yy",},"resourceVersion":"1.0","name":"b1eb0743-937c-4567-80ff-bf5ac301386a","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"00aae53e-12e6-4b8e-90a2-fa6bf12bdab3","path":"sprites/SPR_PorkBloodlust/SPR_PorkBloodlust.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"00aae53e-12e6-4b8e-90a2-fa6bf12bdab3","path":"sprites/SPR_PorkBloodlust/SPR_PorkBloodlust.yy",},"LayerId":{"name":"614d8c13-ccf4-4ea6-b046-c15f2cfa2bf0","path":"sprites/SPR_PorkBloodlust/SPR_PorkBloodlust.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"SPR_PorkBloodlust","path":"sprites/SPR_PorkBloodlust/SPR_PorkBloodlust.yy",},"resourceVersion":"1.0","name":"00aae53e-12e6-4b8e-90a2-fa6bf12bdab3","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"e6546c1c-cd52-4d37-9f74-e97b79534eba","path":"sprites/SPR_PorkBloodlust/SPR_PorkBloodlust.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e6546c1c-cd52-4d37-9f74-e97b79534eba","path":"sprites/SPR_PorkBloodlust/SPR_PorkBloodlust.yy",},"LayerId":{"name":"614d8c13-ccf4-4ea6-b046-c15f2cfa2bf0","path":"sprites/SPR_PorkBloodlust/SPR_PorkBloodlust.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"SPR_PorkBloodlust","path":"sprites/SPR_PorkBloodlust/SPR_PorkBloodlust.yy",},"resourceVersion":"1.0","name":"e6546c1c-cd52-4d37-9f74-e97b79534eba","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"0dc10f3d-c644-43c9-bb63-3c0d8f1abf78","path":"sprites/SPR_PorkBloodlust/SPR_PorkBloodlust.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0dc10f3d-c644-43c9-bb63-3c0d8f1abf78","path":"sprites/SPR_PorkBloodlust/SPR_PorkBloodlust.yy",},"LayerId":{"name":"614d8c13-ccf4-4ea6-b046-c15f2cfa2bf0","path":"sprites/SPR_PorkBloodlust/SPR_PorkBloodlust.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"SPR_PorkBloodlust","path":"sprites/SPR_PorkBloodlust/SPR_PorkBloodlust.yy",},"resourceVersion":"1.0","name":"0dc10f3d-c644-43c9-bb63-3c0d8f1abf78","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"451a1924-78a1-4ffd-8ccf-14aae10c2c07","path":"sprites/SPR_PorkBloodlust/SPR_PorkBloodlust.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"451a1924-78a1-4ffd-8ccf-14aae10c2c07","path":"sprites/SPR_PorkBloodlust/SPR_PorkBloodlust.yy",},"LayerId":{"name":"614d8c13-ccf4-4ea6-b046-c15f2cfa2bf0","path":"sprites/SPR_PorkBloodlust/SPR_PorkBloodlust.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"SPR_PorkBloodlust","path":"sprites/SPR_PorkBloodlust/SPR_PorkBloodlust.yy",},"resourceVersion":"1.0","name":"451a1924-78a1-4ffd-8ccf-14aae10c2c07","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"53b90e0a-fbd9-47bd-b98f-8e9f03b9edf4","path":"sprites/SPR_PorkBloodlust/SPR_PorkBloodlust.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"53b90e0a-fbd9-47bd-b98f-8e9f03b9edf4","path":"sprites/SPR_PorkBloodlust/SPR_PorkBloodlust.yy",},"LayerId":{"name":"614d8c13-ccf4-4ea6-b046-c15f2cfa2bf0","path":"sprites/SPR_PorkBloodlust/SPR_PorkBloodlust.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"SPR_PorkBloodlust","path":"sprites/SPR_PorkBloodlust/SPR_PorkBloodlust.yy",},"resourceVersion":"1.0","name":"53b90e0a-fbd9-47bd-b98f-8e9f03b9edf4","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b1eb0743-937c-4567-80ff-bf5ac301386a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"00aae53e-12e6-4b8e-90a2-fa6bf12bdab3",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e6546c1c-cd52-4d37-9f74-e97b79534eba",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0dc10f3d-c644-43c9-bb63-3c0d8f1abf78",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"451a1924-78a1-4ffd-8ccf-14aae10c2c07",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"53b90e0a-fbd9-47bd-b98f-8e9f03b9edf4",},
   ],
   "sequence": {
-    "spriteId": {"name":"SPR_PorkBloodlust","path":"sprites/SPR_PorkBloodlust/SPR_PorkBloodlust.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "SPR_PorkBloodlust",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 12.0,
@@ -52,17 +45,17 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 6.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"1684ceeb-f7e4-49d9-8afc-af0719bb01d5","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b1eb0743-937c-4567-80ff-bf5ac301386a","path":"sprites/SPR_PorkBloodlust/SPR_PorkBloodlust.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"83327eb2-0594-45b0-81da-e44257a45538","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"00aae53e-12e6-4b8e-90a2-fa6bf12bdab3","path":"sprites/SPR_PorkBloodlust/SPR_PorkBloodlust.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"1e5bca89-aaae-4372-bac6-42c1b20b3141","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e6546c1c-cd52-4d37-9f74-e97b79534eba","path":"sprites/SPR_PorkBloodlust/SPR_PorkBloodlust.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"0a4ee293-96ad-4b2d-a141-22a5c9e9ceb1","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0dc10f3d-c644-43c9-bb63-3c0d8f1abf78","path":"sprites/SPR_PorkBloodlust/SPR_PorkBloodlust.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"a65e3ce4-44cc-46d0-91d7-1482d8932ba2","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"451a1924-78a1-4ffd-8ccf-14aae10c2c07","path":"sprites/SPR_PorkBloodlust/SPR_PorkBloodlust.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"c38829b8-a1e2-47ea-9373-f915bd2efb59","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"53b90e0a-fbd9-47bd-b98f-8e9f03b9edf4","path":"sprites/SPR_PorkBloodlust/SPR_PorkBloodlust.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"1684ceeb-f7e4-49d9-8afc-af0719bb01d5","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b1eb0743-937c-4567-80ff-bf5ac301386a","path":"sprites/SPR_PorkBloodlust/SPR_PorkBloodlust.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"83327eb2-0594-45b0-81da-e44257a45538","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"00aae53e-12e6-4b8e-90a2-fa6bf12bdab3","path":"sprites/SPR_PorkBloodlust/SPR_PorkBloodlust.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"1e5bca89-aaae-4372-bac6-42c1b20b3141","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e6546c1c-cd52-4d37-9f74-e97b79534eba","path":"sprites/SPR_PorkBloodlust/SPR_PorkBloodlust.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"0a4ee293-96ad-4b2d-a141-22a5c9e9ceb1","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0dc10f3d-c644-43c9-bb63-3c0d8f1abf78","path":"sprites/SPR_PorkBloodlust/SPR_PorkBloodlust.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"a65e3ce4-44cc-46d0-91d7-1482d8932ba2","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"451a1924-78a1-4ffd-8ccf-14aae10c2c07","path":"sprites/SPR_PorkBloodlust/SPR_PorkBloodlust.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c38829b8-a1e2-47ea-9373-f915bd2efb59","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"53b90e0a-fbd9-47bd-b98f-8e9f03b9edf4","path":"sprites/SPR_PorkBloodlust/SPR_PorkBloodlust.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -78,22 +71,13 @@
     "yorigin": 200,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"SPR_PorkBloodlust","path":"sprites/SPR_PorkBloodlust/SPR_PorkBloodlust.yy",},
-    "resourceVersion": "1.4",
-    "name": "SPR_PorkBloodlust",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"614d8c13-ccf4-4ea6-b046-c15f2cfa2bf0","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"614d8c13-ccf4-4ea6-b046-c15f2cfa2bf0","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Pork",
     "path": "folders/Sprites/Pork.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "SPR_PorkBloodlust",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

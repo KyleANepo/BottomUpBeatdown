@@ -78,6 +78,10 @@ if select or (is_array(menu[sub_menu][index]) and (_hmove != 0)) {
 					fadetoroom(r_pork, 10, c_black);
 				break;
 				case 3:
+					//experimental
+					fadetoroom(r_experimental, 10, c_black);
+					break;
+				case 4:
 					sub_menu = MAIN;
 					index = 0;
 				break;
@@ -86,20 +90,20 @@ if select or (is_array(menu[sub_menu][index]) and (_hmove != 0)) {
 		break;
 		case SETTINGS: //level select
 			switch(index) {
+				//case 0:
+				//	//Sound
+				//	change_menu(_hmove, "sound");
+				//break;
+				//case 1:
+				//	//Music
+				//	change_menu(_hmove, "music");
+				//break;
 				case 0:
-					//Sound
-					change_menu(_hmove, "sound");
-				break;
-				case 1:
-					//Music
-					change_menu(_hmove, "music");
-				break;
-				case 2:
 					//Difficulty
 					change_menu(_hmove, "difficulty");
 					global.difficulty = global.dsm_settings[? "difficulty"][0];
 				break;
-				case 3:
+				case 1:
 					sub_menu = MAIN;
 					index = 0;
 				break;

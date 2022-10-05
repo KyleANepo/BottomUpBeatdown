@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "SPR_SteaksSlip",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,18 +27,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"c98f75f6-2e12-48ff-84bb-c970d8726941","path":"sprites/SPR_SteaksSlip/SPR_SteaksSlip.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c98f75f6-2e12-48ff-84bb-c970d8726941","path":"sprites/SPR_SteaksSlip/SPR_SteaksSlip.yy",},"LayerId":{"name":"bc2dd7f6-dfb3-4417-9b62-cea34f9a9427","path":"sprites/SPR_SteaksSlip/SPR_SteaksSlip.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"SPR_SteaksSlip","path":"sprites/SPR_SteaksSlip/SPR_SteaksSlip.yy",},"resourceVersion":"1.0","name":"c98f75f6-2e12-48ff-84bb-c970d8726941","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"3a61c285-7338-4a74-bff7-e29e48b24901","path":"sprites/SPR_SteaksSlip/SPR_SteaksSlip.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3a61c285-7338-4a74-bff7-e29e48b24901","path":"sprites/SPR_SteaksSlip/SPR_SteaksSlip.yy",},"LayerId":{"name":"bc2dd7f6-dfb3-4417-9b62-cea34f9a9427","path":"sprites/SPR_SteaksSlip/SPR_SteaksSlip.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"SPR_SteaksSlip","path":"sprites/SPR_SteaksSlip/SPR_SteaksSlip.yy",},"resourceVersion":"1.0","name":"3a61c285-7338-4a74-bff7-e29e48b24901","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"126b2441-75e4-454f-a274-24e61389311e","path":"sprites/SPR_SteaksSlip/SPR_SteaksSlip.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"126b2441-75e4-454f-a274-24e61389311e","path":"sprites/SPR_SteaksSlip/SPR_SteaksSlip.yy",},"LayerId":{"name":"bc2dd7f6-dfb3-4417-9b62-cea34f9a9427","path":"sprites/SPR_SteaksSlip/SPR_SteaksSlip.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"SPR_SteaksSlip","path":"sprites/SPR_SteaksSlip/SPR_SteaksSlip.yy",},"resourceVersion":"1.0","name":"126b2441-75e4-454f-a274-24e61389311e","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c98f75f6-2e12-48ff-84bb-c970d8726941",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3a61c285-7338-4a74-bff7-e29e48b24901",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"126b2441-75e4-454f-a274-24e61389311e",},
   ],
   "sequence": {
-    "spriteId": {"name":"SPR_SteaksSlip","path":"sprites/SPR_SteaksSlip/SPR_SteaksSlip.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "SPR_SteaksSlip",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 12.0,
@@ -46,11 +45,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"8577aa79-2ede-47fc-bf96-309e4cf4d14b","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c98f75f6-2e12-48ff-84bb-c970d8726941","path":"sprites/SPR_SteaksSlip/SPR_SteaksSlip.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"a52e3ad5-c14f-448b-a25b-3ba4bde20438","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3a61c285-7338-4a74-bff7-e29e48b24901","path":"sprites/SPR_SteaksSlip/SPR_SteaksSlip.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"2411885d-289c-446c-a360-18dd5131468a","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"126b2441-75e4-454f-a274-24e61389311e","path":"sprites/SPR_SteaksSlip/SPR_SteaksSlip.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -66,22 +65,13 @@
     "yorigin": 80,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"SPR_SteaksSlip","path":"sprites/SPR_SteaksSlip/SPR_SteaksSlip.yy",},
-    "resourceVersion": "1.4",
-    "name": "SPR_SteaksSlip",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"bc2dd7f6-dfb3-4417-9b62-cea34f9a9427","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"bc2dd7f6-dfb3-4417-9b62-cea34f9a9427","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Steaks",
     "path": "folders/Sprites/Steaks.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "SPR_SteaksSlip",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

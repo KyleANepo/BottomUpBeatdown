@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "SPR_PorkGuard",
   "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"20b49dcb-58df-48b6-8ec5-5f4dd43aaf3e","path":"sprites/SPR_PorkGuard/SPR_PorkGuard.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"20b49dcb-58df-48b6-8ec5-5f4dd43aaf3e","path":"sprites/SPR_PorkGuard/SPR_PorkGuard.yy",},"LayerId":{"name":"8f403df0-f26e-4f09-907a-949db058359d","path":"sprites/SPR_PorkGuard/SPR_PorkGuard.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"SPR_PorkGuard","path":"sprites/SPR_PorkGuard/SPR_PorkGuard.yy",},"resourceVersion":"1.0","name":"20b49dcb-58df-48b6-8ec5-5f4dd43aaf3e","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"20b49dcb-58df-48b6-8ec5-5f4dd43aaf3e",},
   ],
   "sequence": {
-    "spriteId": {"name":"SPR_PorkGuard","path":"sprites/SPR_PorkGuard/SPR_PorkGuard.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "SPR_PorkGuard",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 12.0,
@@ -37,12 +40,12 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 1.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"dc446f59-500e-4709-a268-93434b12fca7","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"20b49dcb-58df-48b6-8ec5-5f4dd43aaf3e","path":"sprites/SPR_PorkGuard/SPR_PorkGuard.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"dc446f59-500e-4709-a268-93434b12fca7","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"20b49dcb-58df-48b6-8ec5-5f4dd43aaf3e","path":"sprites/SPR_PorkGuard/SPR_PorkGuard.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 147,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"SPR_PorkGuard","path":"sprites/SPR_PorkGuard/SPR_PorkGuard.yy",},
-    "resourceVersion": "1.4",
-    "name": "SPR_PorkGuard",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"8f403df0-f26e-4f09-907a-949db058359d","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"8f403df0-f26e-4f09-907a-949db058359d","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Pork",
     "path": "folders/Sprites/Pork.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "SPR_PorkGuard",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

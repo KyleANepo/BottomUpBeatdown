@@ -8,9 +8,9 @@ if(sprite_is_on_frame(DMGFrame) && abs(depth - other.depth) <= LayerSize && Owne
 		    other.State = "Hit";
 		    other.alarm[0] = StunLength;
 	
-			if (OBJ_Player.bloodLust != true)
+			if (OwnerID.bloodLust != true)
 			{
-				OBJ_Player.SuperMeter += 1;
+				OwnerID.SuperMeter += 1;
 			}
 	
 			//Hit effects
@@ -21,7 +21,7 @@ if(sprite_is_on_frame(DMGFrame) && abs(depth - other.depth) <= LayerSize && Owne
 				hitstop(100);
 			}
 			
-			if (OBJ_Player.image_xscale < 0) {
+			if (OwnerID.image_xscale < 0) {
 				other.Knockback = Knockback;
 			} else {
 				other.Knockback = -Knockback;
@@ -35,7 +35,7 @@ if(sprite_is_on_frame(DMGFrame) && abs(depth - other.depth) <= LayerSize && Owne
 			
 		} else 
 		{ //is armored
-			if ((isUnblock == true or OBJ_Player.bloodLust) && other.sprite_index != SPR_VinnyPhase2) //if guardbreaker move
+			if ((isUnblock == true or OwnerID.bloodLust) && other.sprite_index != SPR_VinnyPhase2) //if guardbreaker move
 			{
 				other.isArmored = false
 				
@@ -55,7 +55,7 @@ if(sprite_is_on_frame(DMGFrame) && abs(depth - other.depth) <= LayerSize && Owne
 					image_angle = irandom(360);
 				}
 				
-				if (OBJ_Player.image_xscale < 0) {
+				if (OwnerID.image_xscale < 0) {
 				other.Knockback = Knockback;
 				} else {
 					other.Knockback = -Knockback;

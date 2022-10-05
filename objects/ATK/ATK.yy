@@ -27,6 +27,8 @@
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"OBJ_Buster","path":"objects/OBJ_Buster/OBJ_Buster.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"OBJ_BusterMinion","path":"objects/OBJ_BusterMinion/OBJ_BusterMinion.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"OBJ_Pork","path":"objects/OBJ_Pork/OBJ_Pork.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"OBJ_PorkExperimental","path":"objects/OBJ_PorkExperimental/OBJ_PorkExperimental.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"OBJ_PlayerExperimental","path":"objects/OBJ_PlayerExperimental/OBJ_PlayerExperimental.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],

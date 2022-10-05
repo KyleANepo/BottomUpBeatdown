@@ -5,5 +5,5 @@
 // Inherit the parent event
 event_inherited();
 
-x = OBJ_Player.x;
-y = OBJ_Player.y;
+x = OwnerID.x;
+y = OwnerID.y;

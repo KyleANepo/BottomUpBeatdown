@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "SPR_SteaksBloodlust",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,27 +27,17 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"b1721f25-6796-4cea-a5ca-0eb08a72047d","path":"sprites/SPR_SteaksBloodlust/SPR_SteaksBloodlust.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b1721f25-6796-4cea-a5ca-0eb08a72047d","path":"sprites/SPR_SteaksBloodlust/SPR_SteaksBloodlust.yy",},"LayerId":{"name":"818039f5-52e9-4d48-821d-b6068ea9409c","path":"sprites/SPR_SteaksBloodlust/SPR_SteaksBloodlust.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"SPR_SteaksBloodlust","path":"sprites/SPR_SteaksBloodlust/SPR_SteaksBloodlust.yy",},"resourceVersion":"1.0","name":"b1721f25-6796-4cea-a5ca-0eb08a72047d","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"0a77ada1-f96a-400c-a4ad-5c89741a389a","path":"sprites/SPR_SteaksBloodlust/SPR_SteaksBloodlust.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0a77ada1-f96a-400c-a4ad-5c89741a389a","path":"sprites/SPR_SteaksBloodlust/SPR_SteaksBloodlust.yy",},"LayerId":{"name":"818039f5-52e9-4d48-821d-b6068ea9409c","path":"sprites/SPR_SteaksBloodlust/SPR_SteaksBloodlust.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"SPR_SteaksBloodlust","path":"sprites/SPR_SteaksBloodlust/SPR_SteaksBloodlust.yy",},"resourceVersion":"1.0","name":"0a77ada1-f96a-400c-a4ad-5c89741a389a","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"7886e33c-2383-442e-9be1-f356faf08b43","path":"sprites/SPR_SteaksBloodlust/SPR_SteaksBloodlust.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7886e33c-2383-442e-9be1-f356faf08b43","path":"sprites/SPR_SteaksBloodlust/SPR_SteaksBloodlust.yy",},"LayerId":{"name":"818039f5-52e9-4d48-821d-b6068ea9409c","path":"sprites/SPR_SteaksBloodlust/SPR_SteaksBloodlust.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"SPR_SteaksBloodlust","path":"sprites/SPR_SteaksBloodlust/SPR_SteaksBloodlust.yy",},"resourceVersion":"1.0","name":"7886e33c-2383-442e-9be1-f356faf08b43","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"005d09a7-b91c-4708-830a-c7dbc2998e70","path":"sprites/SPR_SteaksBloodlust/SPR_SteaksBloodlust.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"005d09a7-b91c-4708-830a-c7dbc2998e70","path":"sprites/SPR_SteaksBloodlust/SPR_SteaksBloodlust.yy",},"LayerId":{"name":"818039f5-52e9-4d48-821d-b6068ea9409c","path":"sprites/SPR_SteaksBloodlust/SPR_SteaksBloodlust.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"SPR_SteaksBloodlust","path":"sprites/SPR_SteaksBloodlust/SPR_SteaksBloodlust.yy",},"resourceVersion":"1.0","name":"005d09a7-b91c-4708-830a-c7dbc2998e70","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"770ad1df-fe4b-40bf-bc98-1ee8d729541a","path":"sprites/SPR_SteaksBloodlust/SPR_SteaksBloodlust.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"770ad1df-fe4b-40bf-bc98-1ee8d729541a","path":"sprites/SPR_SteaksBloodlust/SPR_SteaksBloodlust.yy",},"LayerId":{"name":"818039f5-52e9-4d48-821d-b6068ea9409c","path":"sprites/SPR_SteaksBloodlust/SPR_SteaksBloodlust.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"SPR_SteaksBloodlust","path":"sprites/SPR_SteaksBloodlust/SPR_SteaksBloodlust.yy",},"resourceVersion":"1.0","name":"770ad1df-fe4b-40bf-bc98-1ee8d729541a","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"ea1f0938-2b55-4e64-8a2a-5226ce6cb128","path":"sprites/SPR_SteaksBloodlust/SPR_SteaksBloodlust.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ea1f0938-2b55-4e64-8a2a-5226ce6cb128","path":"sprites/SPR_SteaksBloodlust/SPR_SteaksBloodlust.yy",},"LayerId":{"name":"818039f5-52e9-4d48-821d-b6068ea9409c","path":"sprites/SPR_SteaksBloodlust/SPR_SteaksBloodlust.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"SPR_SteaksBloodlust","path":"sprites/SPR_SteaksBloodlust/SPR_SteaksBloodlust.yy",},"resourceVersion":"1.0","name":"ea1f0938-2b55-4e64-8a2a-5226ce6cb128","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b1721f25-6796-4cea-a5ca-0eb08a72047d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0a77ada1-f96a-400c-a4ad-5c89741a389a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7886e33c-2383-442e-9be1-f356faf08b43",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"005d09a7-b91c-4708-830a-c7dbc2998e70",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"770ad1df-fe4b-40bf-bc98-1ee8d729541a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ea1f0938-2b55-4e64-8a2a-5226ce6cb128",},
   ],
   "sequence": {
-    "spriteId": {"name":"SPR_SteaksBloodlust","path":"sprites/SPR_SteaksBloodlust/SPR_SteaksBloodlust.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "SPR_SteaksBloodlust",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 12.0,
@@ -52,17 +45,17 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 6.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"83a6d0d0-1a1b-4dc1-8248-c6a8f302727e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b1721f25-6796-4cea-a5ca-0eb08a72047d","path":"sprites/SPR_SteaksBloodlust/SPR_SteaksBloodlust.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"54429f6b-14a5-4d09-bfab-f1b686fd5bd3","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0a77ada1-f96a-400c-a4ad-5c89741a389a","path":"sprites/SPR_SteaksBloodlust/SPR_SteaksBloodlust.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"964fffe3-b759-4578-bf27-45e79ea5cd1d","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7886e33c-2383-442e-9be1-f356faf08b43","path":"sprites/SPR_SteaksBloodlust/SPR_SteaksBloodlust.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"a9ac0a52-63ca-4c22-8ce2-64869f7a2481","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"005d09a7-b91c-4708-830a-c7dbc2998e70","path":"sprites/SPR_SteaksBloodlust/SPR_SteaksBloodlust.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"5c00c3d5-13b8-4335-ade7-e87b97c86cd3","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"770ad1df-fe4b-40bf-bc98-1ee8d729541a","path":"sprites/SPR_SteaksBloodlust/SPR_SteaksBloodlust.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"e26d8759-e417-4c66-ab92-049918893dd7","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ea1f0938-2b55-4e64-8a2a-5226ce6cb128","path":"sprites/SPR_SteaksBloodlust/SPR_SteaksBloodlust.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"83a6d0d0-1a1b-4dc1-8248-c6a8f302727e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b1721f25-6796-4cea-a5ca-0eb08a72047d","path":"sprites/SPR_SteaksBloodlust/SPR_SteaksBloodlust.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"54429f6b-14a5-4d09-bfab-f1b686fd5bd3","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0a77ada1-f96a-400c-a4ad-5c89741a389a","path":"sprites/SPR_SteaksBloodlust/SPR_SteaksBloodlust.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"964fffe3-b759-4578-bf27-45e79ea5cd1d","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7886e33c-2383-442e-9be1-f356faf08b43","path":"sprites/SPR_SteaksBloodlust/SPR_SteaksBloodlust.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"a9ac0a52-63ca-4c22-8ce2-64869f7a2481","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"005d09a7-b91c-4708-830a-c7dbc2998e70","path":"sprites/SPR_SteaksBloodlust/SPR_SteaksBloodlust.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5c00c3d5-13b8-4335-ade7-e87b97c86cd3","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"770ad1df-fe4b-40bf-bc98-1ee8d729541a","path":"sprites/SPR_SteaksBloodlust/SPR_SteaksBloodlust.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"e26d8759-e417-4c66-ab92-049918893dd7","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ea1f0938-2b55-4e64-8a2a-5226ce6cb128","path":"sprites/SPR_SteaksBloodlust/SPR_SteaksBloodlust.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -78,22 +71,13 @@
     "yorigin": 100,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"SPR_SteaksBloodlust","path":"sprites/SPR_SteaksBloodlust/SPR_SteaksBloodlust.yy",},
-    "resourceVersion": "1.4",
-    "name": "SPR_SteaksBloodlust",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"818039f5-52e9-4d48-821d-b6068ea9409c","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"818039f5-52e9-4d48-821d-b6068ea9409c","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Steaks",
     "path": "folders/Sprites/Steaks.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "SPR_SteaksBloodlust",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

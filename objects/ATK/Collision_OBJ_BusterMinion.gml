@@ -8,9 +8,9 @@ if(sprite_is_on_frame(DMGFrame) && abs(depth - other.depth) <= LayerSize && Owne
 		    other.State = "Hit";
 		    other.alarm[0] = StunLength;
 			
-			if (OBJ_Player.bloodLust != true)
+			if (OwnerID.bloodLust != true)
 			{
-				OBJ_Player.SuperMeter += 1;
+				OwnerID.SuperMeter += 1;
 			}
 			
 			//Hit effects
@@ -21,7 +21,7 @@ if(sprite_is_on_frame(DMGFrame) && abs(depth - other.depth) <= LayerSize && Owne
 				hitstop(100);
 			}
 			
-			if (OBJ_Player.image_xscale < 0) {
+			if (OwnerID.image_xscale < 0) {
 				other.Knockback = Knockback;
 			} else {
 				other.Knockback = -Knockback;
